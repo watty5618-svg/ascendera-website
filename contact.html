@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get in touch — Ascendera Group</title>
+<meta name="description" content="Start a conversation with Ascendera Group. Brief us, and the right senior people reply within two working days.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@1,6..72,300..400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<span class="progress"></span>
+
+<header class="nav">
+  <a class="nav__brand" href="index.html"><span class="dot"></span>ASCENDERA<small>Group · Riyadh</small></a>
+  <nav class="nav__links">
+    <a href="advisory/index.html">Advisory</a>
+    <a href="veriso/index.html">Veriso</a>
+    <a href="kalibra/index.html">Kalibra</a>
+    <a href="leadership/index.html">Leadership</a>
+  </nav>
+</header>
+
+<section class="hero hero--sub">
+  <div class="hero__scrim" style="background:var(--ink);"></div>
+  <div class="hero__noise"></div>
+  <div class="hero__inner">
+    <p class="eyebrow">Get in touch</p>
+    <h1 class="h-display" data-words>Start a <em>conversation.</em></h1>
+    <p class="hero__sub">Brief us in a few lines. The right senior people reply within two working days — no sales team in between.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <form class="form" data-reveal onsubmit="event.preventDefault(); this.innerHTML='<p class=&quot;form__note&quot; style=&quot;font-size:1.15rem;color:var(--white)&quot;>Thank you. Your note has been recorded — we reply within two working days. <em class=&quot;serif-i accent&quot;>(Prototype: no data was sent.)</em></p>';">
+      <label for="f-name">Name</label>
+      <input id="f-name" type="text" autocomplete="name" required>
+
+      <label for="f-org">Organisation</label>
+      <input id="f-org" type="text" autocomplete="organization" required>
+
+      <label for="f-email">Work email</label>
+      <input id="f-email" type="email" autocomplete="email" required>
+
+      <label for="f-need">What do you need?</label>
+      <select id="f-need" required>
+        <option value="" selected disabled>Choose one</option>
+        <option>Advisory — diligence, HSSE or E&amp;S</option>
+        <option>Veriso — assurance technology</option>
+        <option>Kalibra — the experiential campus</option>
+        <option>Something else</option>
+      </select>
+
+      <label for="f-msg">The situation, in a few lines</label>
+      <textarea id="f-msg"></textarea>
+
+      <button class="btn" type="submit">Send</button>
+      <p class="form__note">Prototype note — this form is not connected yet. Prefer email? Write to <a href="mailto:hello@ascenderagroup.sa" style="color:var(--accent);">hello@ascenderagroup.sa</a>.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__brand">ASCENDERA<small>Advise · Verify · Prove — Riyadh, KSA</small></div>
+  <nav>
+    <a href="advisory/index.html">Advisory</a>
+    <a href="veriso/index.html">Veriso</a>
+    <a href="kalibra/index.html">Kalibra</a>
+    <a href="leadership/index.html">Leadership</a>
+  </nav>
+  <p class="footer__legal">© 2026 Ascendera Group<br>Wholly Saudi owned</p>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

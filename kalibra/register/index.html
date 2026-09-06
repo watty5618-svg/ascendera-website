@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register interest — Kalibra, the experiential campus</title>
+<meta name="description" content="Kalibra is Ascendera's experiential campus, opening soon in Riyadh. Register interest and be briefed before the doors open.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@1,6..72,300..400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body class="brand-kalibra">
+<span class="progress"></span>
+
+<header class="nav">
+  <a class="nav__group" href="../index.html">← Kalibra</a>
+  <a class="nav__brand" href="../index.html"><span class="dot"></span>KALIBRA<small>The experiential campus</small></a>
+  <nav class="nav__links">
+    <a href="../index.html#idea">The idea</a>
+  </nav>
+</header>
+
+<section class="hero hero--sub">
+  <div class="hero__media"><img src="../../assets/img/kalibra-hero.jpg" alt=""></div>
+  <div class="hero__scrim"></div>
+  <div class="hero__noise"></div>
+  <div class="hero__inner">
+    <p class="eyebrow">Kalibra — Register interest</p>
+    <h1 class="h-display" data-words>Be briefed <em>before</em> the doors open.</h1>
+    <p class="hero__sub">Founding partners shape the first scenarios and secure early cohort places. Tell us who you are and what your workforce needs to prove.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <form class="form" data-reveal onsubmit="event.preventDefault(); this.innerHTML='<p class=&quot;form__note&quot; style=&quot;font-size:1.15rem;color:var(--white)&quot;>Thank you. You are on the list — we will brief you before the first cohort opens. <em class=&quot;serif-i accent&quot;>(Prototype: no data was sent.)</em></p>';">
+      <label for="f-name">Name</label>
+      <input id="f-name" type="text" autocomplete="name" required>
+
+      <label for="f-org">Organisation</label>
+      <input id="f-org" type="text" autocomplete="organization" required>
+
+      <label for="f-email">Work email</label>
+      <input id="f-email" type="email" autocomplete="email" required>
+
+      <label for="f-size">Frontline workforce size</label>
+      <select id="f-size" required>
+        <option value="" selected disabled>Choose one</option>
+        <option>Under 500</option>
+        <option>500 – 2,000</option>
+        <option>2,000 – 10,000</option>
+        <option>Over 10,000</option>
+      </select>
+
+      <label for="f-need">What must your people be able to prove?</label>
+      <textarea id="f-need"></textarea>
+
+      <button class="btn" type="submit">Register interest</button>
+      <p class="form__note">Prototype note — this form is not connected yet. Prefer email? Write to <a href="mailto:kalibra@ascenderagroup.sa" style="color:var(--accent);">kalibra@ascenderagroup.sa</a>.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__brand">KALIBRA<small>The experiential campus by Ascendera Group</small></div>
+  <nav>
+    <a href="../../index.html">Group</a>
+    <a href="../../advisory/index.html">Advisory</a>
+    <a href="../../veriso/index.html">Veriso</a>
+    <a href="../index.html">Kalibra</a>
+    <a href="../../leadership/index.html">Leadership</a>
+  </nav>
+  <p class="footer__legal">© 2026 Ascendera Group<br>Opening soon — Riyadh, KSA</p>
+</footer>
+
+<script src="../../assets/js/site.js"></script>
+</body>
+</html>
