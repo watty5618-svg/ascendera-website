@@ -8,6 +8,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@1,6..72,300..400&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg">
+<link rel="canonical" href="https://watty5618-svg.github.io/ascendera-website/kalibra/register/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ascendera Group">
+<meta property="og:title" content="Register interest — Kalibra, the experiential campus">
+<meta property="og:description" content="Kalibra is Ascendera's experiential campus, opening soon in Riyadh. Register interest and be briefed before the doors open.">
+<meta property="og:url" content="https://watty5618-svg.github.io/ascendera-website/kalibra/register/">
+<meta property="og:image" content="https://watty5618-svg.github.io/ascendera-website/assets/img/kalibra-hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Register interest — Kalibra, the experiential campus">
+<meta name="twitter:description" content="Kalibra is Ascendera's experiential campus, opening soon in Riyadh. Register interest and be briefed before the doors open.">
+<noscript><style>[data-reveal]{opacity:1!important;transform:none!important}.hero__sub,.hero__actions,.hero__meta{opacity:1!important;transform:none!important}.w>span{transform:none!important}</style></noscript>
 <link rel="stylesheet" href="../../assets/css/site.css">
 </head>
 <body class="brand-kalibra">
@@ -22,7 +34,7 @@
 </header>
 
 <section class="hero hero--sub">
-  <div class="hero__media"><img src="../../assets/img/kalibra-hero.jpg" alt=""></div>
+  <div class="hero__media"><img src="../../assets/img/kalibra-hero.jpg" alt="The Kalibra experiential training campus in Riyadh"></div>
   <div class="hero__scrim"></div>
   <div class="hero__noise"></div>
   <div class="hero__inner">
@@ -34,18 +46,18 @@
 
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <form class="form" data-reveal onsubmit="event.preventDefault(); this.innerHTML='<p class=&quot;form__note&quot; style=&quot;font-size:1.15rem;color:var(--white)&quot;>Thank you. You are on the list — we will brief you before the first cohort opens. <em class=&quot;serif-i accent&quot;>(Prototype: no data was sent.)</em></p>';">
+    <form class="form" data-reveal onsubmit="event.preventDefault(); this.innerHTML='<p class=&quot;form__note&quot; style=&quot;font-size:1.15rem;color:var(--white)&quot;>Thank you. This form is not connected yet — email kalibra@ascenderagroup.sa and we will brief you before the first cohort opens.</p>';">
       <label for="f-name">Name</label>
-      <input id="f-name" type="text" autocomplete="name" required>
+      <input id="f-name" name="name" type="text" autocomplete="name" required>
 
       <label for="f-org">Organisation</label>
-      <input id="f-org" type="text" autocomplete="organization" required>
+      <input id="f-org" name="organization" type="text" autocomplete="organization" required>
 
       <label for="f-email">Work email</label>
-      <input id="f-email" type="email" autocomplete="email" required>
+      <input id="f-email" name="email" type="email" autocomplete="email" required>
 
       <label for="f-size">Frontline workforce size</label>
-      <select id="f-size" required>
+      <select id="f-size" name="workforce_size" required>
         <option value="" selected disabled>Choose one</option>
         <option>Under 500</option>
         <option>500 – 2,000</option>
@@ -54,7 +66,7 @@
       </select>
 
       <label for="f-need">What must your people be able to prove?</label>
-      <textarea id="f-need"></textarea>
+      <textarea id="f-need" name="requirements"></textarea>
 
       <button class="btn" type="submit">Register interest</button>
       <p class="form__note">Prototype note — this form is not connected yet. Prefer email? Write to <a href="mailto:kalibra@ascenderagroup.sa" style="color:var(--accent);">kalibra@ascenderagroup.sa</a>.</p>
