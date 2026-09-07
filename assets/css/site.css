@@ -73,6 +73,10 @@ a{ color:inherit; }
   font-size:1.05rem; text-decoration:none; display:flex; align-items:baseline; gap:.5rem;
 }
 .nav__brand .dot{ width:8px; height:8px; border-radius:50%; background:var(--accent); align-self:center; }
+.nav__brand .logo{ width:20px; height:20px; align-self:center; display:block; }
+.nav__brand .logo .bar-t{ fill:var(--accent); opacity:1; }
+.footer__brand .logo{ width:26px; height:26px; display:inline-block; vertical-align:-6px; margin-right:.55rem; }
+.footer__brand .logo .bar-t{ fill:var(--accent); }
 .nav__brand small{
   font-family:var(--font-mono); font-weight:400; font-size:.6rem;
   letter-spacing:.18em; text-transform:uppercase; color:var(--muted);
