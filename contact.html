@@ -47,7 +47,18 @@
 
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <form class="form" data-reveal onsubmit="event.preventDefault(); this.innerHTML='<p class=&quot;form__note&quot; style=&quot;font-size:1.15rem;color:var(--white)&quot;>Thank you. This form is not connected yet — email us directly at hello@ascenderagroup.sa and the right senior people reply within two working days.</p>';">
+    <div id="form-sent" hidden style="border:1px solid var(--line); padding:2.6rem 2.4rem; margin-bottom:2.4rem;">
+      <p class="eyebrow">Message sent</p>
+      <h2 class="h-serif" style="margin:.6rem 0 .8rem;">Thank you — <em>it's with us.</em></h2>
+      <p style="color:var(--muted); max-width:52ch;">Your enquiry has gone straight to the senior team. The right people reply within two working days.</p>
+    </div>
+    <form class="form" data-reveal action="https://formsubmit.co/clientaccess@ascenderagroup.sa" method="POST">
+      <input type="hidden" name="_subject" value="Ascendera website — new enquiry">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://watty5618-svg.github.io/ascendera-website/contact.html?sent=1">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
       <label for="f-name">Name</label>
       <input id="f-name" name="name" type="text" autocomplete="name" required>
 
@@ -70,7 +81,7 @@
       <textarea id="f-msg" name="message"></textarea>
 
       <button class="btn" type="submit">Send</button>
-      <p class="form__note">Prototype note — this form is not connected yet. Prefer email? Write to <a href="mailto:hello@ascenderagroup.sa" style="color:var(--accent);">hello@ascenderagroup.sa</a>.</p>
+      <p class="form__note">Straight to the senior team — the right people reply within two working days.</p>
     </form>
   </div>
 </section>

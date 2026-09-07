@@ -139,3 +139,15 @@
   // safety: never trap the page without copy
   setTimeout(endFilm, 36000);
 })();
+
+/* Contact form: after FormSubmit redirects back with ?sent=1, show the
+   thank-you panel and hide the form. */
+(function () {
+  if (!/[?&]sent=1/.test(location.search)) return;
+  var done = document.getElementById("form-sent");
+  var form = document.querySelector("form.form");
+  if (!done) return;
+  done.hidden = false;
+  if (form) form.style.display = "none";
+  window.scrollTo(0, 0);
+})();
