@@ -628,3 +628,34 @@ html,body{ overflow-x:clip; }
   .demo-frame video{ display:none; }
   .demo-frame::after{ content:""; display:block; aspect-ratio:16/9; }
 }
+
+/* ---------- barrier film-synced hero: copy hidden until film ends ---------- */
+body.film-armed #p-veriso-barrier .hero .w > span{
+  transition:none; transform:translateY(112%) rotate(2deg);
+}
+body.film-armed #p-veriso-barrier .hero .hero__sub,
+body.film-armed #p-veriso-barrier .hero .hero__actions,
+body.film-armed #p-veriso-barrier .hero .hero__meta{
+  transition:none; opacity:0; transform:translateY(18px);
+}
+body.film-armed.film-ended #p-veriso-barrier .hero .w > span{
+  transition:transform 1.1s var(--ease); transition-delay:var(--d,0s);
+  transform:translateY(0) rotate(0);
+}
+body.film-armed.film-ended #p-veriso-barrier .hero .hero__sub{
+  transition:opacity 1s var(--ease) .7s, transform 1s var(--ease) .7s;
+  opacity:1; transform:none;
+}
+body.film-armed.film-ended #p-veriso-barrier .hero .hero__actions{
+  transition:opacity 1s var(--ease) .95s, transform 1s var(--ease) .95s;
+  opacity:1; transform:none;
+}
+body.film-armed.film-ended #p-veriso-barrier .hero .hero__meta{
+  transition:opacity 1.1s var(--ease) 1.2s; opacity:1;
+}
+@media (prefers-reduced-motion:reduce){
+  body.film-armed #p-veriso-barrier .hero .w > span{ transform:none; }
+  body.film-armed #p-veriso-barrier .hero .hero__sub,
+  body.film-armed #p-veriso-barrier .hero .hero__actions,
+  body.film-armed #p-veriso-barrier .hero .hero__meta{ opacity:1; transform:none; }
+}

@@ -105,3 +105,37 @@
     cio.observe(el);
   });
 })();
+
+/* Barrier film-synced hero: hide hero copy while the film plays, reveal it
+   when the film ends, then let it stay while the film loops behind it. */
+(function () {
+  // SPA body class is brand-veriso; the barrier page section is #p-veriso-barrier.
+  var bp = document.getElementById("p-veriso-barrier");
+  if (!bp) return;
+  var v = bp.querySelector(".hero__video");
+  if (!v) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  function onBarrierRoute() { return location.hash.indexOf("veriso/barrier") !== -1; }
+  function arm() {
+    if (document.body.classList.contains("film-ended")) return;
+    document.body.classList.add("film-armed");
+  }
+  if (onBarrierRoute()) arm();
+  window.addEventListener("hashchange", function () {
+    if (onBarrierRoute()) arm();
+    else document.body.classList.remove("film-armed");
+  });
+  function endFilm() {
+    if (document.body.classList.contains("film-ended")) return;
+    document.body.classList.add("film-ended");
+    v.removeEventListener("ended", endFilm);
+    v.removeEventListener("timeupdate", onTime);
+  }
+  function onTime() {
+    if (v.duration && v.currentTime > v.duration - 1.4) endFilm();
+  }
+  v.addEventListener("ended", endFilm);
+  v.addEventListener("timeupdate", onTime);
+  // safety: never trap the page without copy
+  setTimeout(endFilm, 36000);
+})();
