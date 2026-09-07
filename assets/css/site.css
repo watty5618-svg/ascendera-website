@@ -522,11 +522,11 @@ html,body{ overflow-x:clip; }
 .focus-card{ border:1px solid var(--line); display:flex; flex-direction:column; transition:border-color .4s; }
 .focus-card:hover{ border-color:color-mix(in srgb, var(--accent) 55%, transparent); }
 .focus-card__media{ overflow:hidden; }
-.focus-card__media img{
-  width:100%; aspect-ratio:16/9.5; object-fit:cover;
+.focus-card__media img, .focus-card__media video{
+  width:100%; aspect-ratio:16/9.5; object-fit:cover; display:block;
   transition:transform 1.2s var(--ease);
 }
-.focus-card:hover .focus-card__media img{ transform:scale(1.05); }
+.focus-card:hover .focus-card__media img, .focus-card:hover .focus-card__media video{ transform:scale(1.05); }
 .focus-card__body{ padding:2.1rem 2.2rem 2.6rem; }
 .focus-card__idx{
   font-family:var(--font-mono); font-size:.68rem; letter-spacing:.2em;
@@ -617,7 +617,10 @@ html,body{ overflow-x:clip; }
   font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
 }
 @media (prefers-reduced-motion:reduce){
-  .hero__video,.demo-video{ display:none; }
+  .hero__video,.demo-video,.focus-card__video{ display:none; }
+  .focus-card__media--film{
+    background-size:cover; background-position:center; aspect-ratio:16/9.5;
+  }
 }
 
 /* reduced-motion / no-video fallback: show poster as background */
