@@ -258,7 +258,7 @@ html,body{ overflow-x:clip; }
   font-size:clamp(3.4rem,5.8vw,5.6rem); color:var(--accent);
   font-variant-numeric:tabular-nums;
 }
-.stat span{
+.stat > span{
   font-family:var(--font-mono); font-size:.82rem; letter-spacing:.14em;
   text-transform:uppercase; color:var(--white); line-height:1.65;
 }
