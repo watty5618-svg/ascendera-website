@@ -2,6 +2,28 @@
 (function () {
   "use strict";
 
+  /* Marquee: constant pixel speed on every device.
+     The CSS animates the track by -50% over a fixed duration, so a wider
+     track (big system font settings, zoomed displays, fallback fonts)
+     scrolls proportionally faster. Measure the real width and derive the
+     duration from it so the pace is identical everywhere. */
+  (function () {
+    var SPEED = 60; // px per second, matches the designed desktop pace
+    function tune() {
+      document.querySelectorAll(".marquee__track").forEach(function (t) {
+        var w = t.scrollWidth / 2;
+        if (w > 0) t.style.animationDuration = (w / SPEED).toFixed(2) + "s";
+      });
+    }
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(tune);
+    tune();
+    var rt;
+    window.addEventListener("resize", function () {
+      clearTimeout(rt);
+      rt = setTimeout(tune, 200);
+    });
+  })();
+
   /* Split headline words into masked spans for the word-by-word reveal.
      Handles plain text and inline <em> accents. */
   var wordIndex = 0;
