@@ -666,3 +666,14 @@ body.film-armed.film-ended #p-veriso-barrier .hero .hero__meta{
   body.film-armed #p-veriso-barrier .hero .hero__actions,
   body.film-armed #p-veriso-barrier .hero .hero__meta{ opacity:1; transform:none; }
 }
+
+/* language toggle pill (EN + AR navs) */
+.nav__links a.lang-toggle{
+  border:1px solid var(--line);
+  padding:.34rem .8rem;
+  border-radius:999px;
+  text-decoration:none;
+  letter-spacing:0;
+  transition:border-color .25s, color .25s;
+}
+.nav__links a.lang-toggle:hover{ border-color:var(--accent); color:var(--accent); }

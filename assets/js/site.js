@@ -109,11 +109,16 @@
 /* Barrier film-synced hero: hide hero copy while the film plays, reveal it
    when the film ends, then let it stay while the film loops behind it. */
 (function () {
-  // SPA body class is brand-veriso; the barrier page section is #p-veriso-barrier.
-  var bp = document.getElementById("p-veriso-barrier");
-  if (!bp) return;
-  var v = bp.querySelector(".hero__video");
-  if (!v) return;
+  // SPA body class is brand-veriso; the barrier page sections are
+  // #p-veriso-barrier (EN) and #p-ar-veriso-barrier (AR).
+  var videos = [];
+  ["p-veriso-barrier", "p-ar-veriso-barrier"].forEach(function (id) {
+    var sec = document.getElementById(id);
+    if (!sec) return;
+    var v = sec.querySelector(".hero__video");
+    if (v) videos.push(v);
+  });
+  if (!videos.length) return;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   function onBarrierRoute() { return location.hash.indexOf("veriso/barrier") !== -1; }
   function arm() {
@@ -128,14 +133,20 @@
   function endFilm() {
     if (document.body.classList.contains("film-ended")) return;
     document.body.classList.add("film-ended");
-    v.removeEventListener("ended", endFilm);
-    v.removeEventListener("timeupdate", onTime);
+    videos.forEach(function (v) {
+      v.removeEventListener("ended", endFilm);
+      v.removeEventListener("timeupdate", onTime);
+    });
   }
   function onTime() {
-    if (v.duration && v.currentTime > v.duration - 1.4) endFilm();
+    videos.forEach(function (v) {
+      if (v.duration && v.currentTime > v.duration - 1.4) endFilm();
+    });
   }
-  v.addEventListener("ended", endFilm);
-  v.addEventListener("timeupdate", onTime);
+  videos.forEach(function (v) {
+    v.addEventListener("ended", endFilm);
+    v.addEventListener("timeupdate", onTime);
+  });
   // safety: never trap the page without copy
   setTimeout(endFilm, 36000);
 })();

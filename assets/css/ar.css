@@ -1,0 +1,107 @@
+/* ============================================================
+   ASCENDERA GROUP · Arabic (RTL) layer
+   Loaded after site.css on Arabic pages only. Pages carry
+   class="ar" on <body>; in the single-file build the router
+   puts the same class on <body> for Arabic routes, so every
+   rule here is scoped to .ar and fires in both contexts.
+   ============================================================ */
+
+.ar{
+  --font-ui:"IBM Plex Sans Arabic","Archivo",-apple-system,"Segoe UI",sans-serif;
+  --font-serif:"Amiri","Newsreader",Georgia,serif;
+  --font-mono:"IBM Plex Sans Arabic","IBM Plex Mono",monospace;
+  direction:rtl;
+}
+
+/* Arabic script must never be letter-spaced (it breaks joining)
+   or uppercased; Latin tokens inside Arabic copy are unaffected. */
+.ar .eyebrow,
+.ar .nav__links a,
+.ar .nav__brand small,
+.ar .hero__meta,
+.ar .stat > span,
+.ar .step__n,
+.ar .brandrow__idx,
+.ar .duo__idx,
+.ar .focus-card__idx,
+.ar .principle small,
+.ar .spec b,
+.ar .footer__brand small,
+.ar .footer__legal,
+.ar .form label,
+.ar .form__note,
+.ar .partners-note,
+.ar .marquee span,
+.ar .btn,
+.ar .refusal h3,
+.ar .cta-band .eyebrow,
+.ar .demo-frame__bar b,
+.ar .mono{
+  letter-spacing:0;
+  text-transform:none;
+}
+
+/* serif italic accents: Arabic has no italic; Amiri carries the
+   same editorial contrast upright */
+.ar .serif-i,
+.ar .h-serif em,
+.ar .h-display em,
+.ar .cta-band h2 .serif-i{
+  font-family:var(--font-serif);
+  font-style:normal;
+  font-weight:400;
+}
+
+/* physical -> flipped layout pieces */
+.ar .hero__meta{
+  right:auto; left:var(--pad);
+  text-align:left;
+}
+.ar .progress{ transform-origin:100% 50%; }
+.ar .stat{ border-right:none; border-left:1px solid var(--line); }
+.ar .stat:last-child{ border-left:none; }
+@media (max-width:900px){
+  .ar .stat{ border-left:none; }
+}
+
+/* nav group back-link arrow: ← becomes → in RTL */
+.ar .nav__group{ direction:rtl; }
+.ar .nav__group .arr{ display:inline-block; transform:scaleX(-1); }
+
+/* footer brand logo margin */
+.ar .footer__brand .logo{ margin-right:0; margin-left:.55rem; }
+
+/* form fields: Arabic placeholder/labels right-aligned, but email
+   stays left-to-right so addresses read correctly */
+.ar .form input, .ar .form select, .ar .form textarea{
+  font-family:var(--font-ui);
+  text-align:right;
+}
+.ar .form input[type="email"]{ direction:ltr; text-align:left; }
+
+/* film-choreography parity for the Arabic barrier page */
+body.film-armed #p-ar-veriso-barrier .hero .w > span{ transition:none; transform:translateY(112%) rotate(-2deg); }
+body.film-armed #p-ar-veriso-barrier .hero .hero__sub,
+body.film-armed #p-ar-veriso-barrier .hero .hero__actions,
+body.film-armed #p-ar-veriso-barrier .hero .hero__meta{ transition:none; opacity:0; transform:translateY(18px); }
+body.film-armed.film-ended #p-ar-veriso-barrier .hero .w > span{ transition:transform 1.1s var(--ease); transition-delay:var(--d,0s); transform:translateY(0) rotate(0); }
+body.film-armed.film-ended #p-ar-veriso-barrier .hero .hero__sub{ transition:opacity 1s var(--ease) .7s, transform 1s var(--ease) .7s; opacity:1; transform:none; }
+body.film-armed.film-ended #p-ar-veriso-barrier .hero .hero__actions{ transition:opacity 1s var(--ease) .95s, transform 1s var(--ease) .95s; opacity:1; transform:none; }
+body.film-armed.film-ended #p-ar-veriso-barrier .hero .hero__meta{ transition:opacity 1s var(--ease) 1.2s, transform 1s var(--ease) 1.2s; opacity:1; transform:none; }
+@media (prefers-reduced-motion: reduce){
+  body.film-armed #p-ar-veriso-barrier .hero .w > span{ transform:none; }
+  body.film-armed #p-ar-veriso-barrier .hero .hero__sub,
+  body.film-armed #p-ar-veriso-barrier .hero .hero__actions,
+  body.film-armed #p-ar-veriso-barrier .hero .hero__meta{ opacity:1; transform:none; }
+}
+
+/* language toggle pill */
+.nav__links a.lang-toggle{
+  border:1px solid var(--line);
+  padding:.34rem .8rem;
+  border-radius:999px;
+  text-decoration:none;
+  letter-spacing:0;
+  transition:border-color .25s, color .25s;
+}
+.nav__links a.lang-toggle:hover{ border-color:var(--accent); color:var(--accent); }
