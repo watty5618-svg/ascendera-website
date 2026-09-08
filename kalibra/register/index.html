@@ -9,13 +9,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@1,6..72,300..400&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg">
-<link rel="canonical" href="https://watty5618-svg.github.io/ascendera-website/kalibra/register/">
+<link rel="canonical" href="https://www.ascenderagroup.sa/kalibra/register/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ascendera Group">
 <meta property="og:title" content="Register interest · Kalibra, the experiential campus">
 <meta property="og:description" content="Kalibra is Ascendera's experiential campus, opening soon in Riyadh. Register interest and be briefed before the doors open.">
-<meta property="og:url" content="https://watty5618-svg.github.io/ascendera-website/kalibra/register/">
-<meta property="og:image" content="https://watty5618-svg.github.io/ascendera-website/assets/img/kalibra-hero.jpg">
+<meta property="og:url" content="https://www.ascenderagroup.sa/kalibra/register/">
+<meta property="og:image" content="https://www.ascenderagroup.sa/assets/img/kalibra-hero.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Register interest · Kalibra, the experiential campus">
 <meta name="twitter:description" content="Kalibra is Ascendera's experiential campus, opening soon in Riyadh. Register interest and be briefed before the doors open.">
@@ -46,7 +46,18 @@
 
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <form class="form" data-reveal onsubmit="event.preventDefault(); this.innerHTML='<p class=&quot;form__note&quot; style=&quot;font-size:1.15rem;color:var(--white)&quot;>Thank you. This form is not connected yet, so email kalibra@ascenderagroup.sa and we will brief you before the first cohort opens.</p>';">
+    <div id="form-sent" hidden style="border:1px solid var(--line); padding:2.6rem 2.4rem; margin-bottom:2.4rem;">
+      <p class="eyebrow">Registered</p>
+      <h2 class="h-serif" style="margin:.6rem 0 .8rem;">Thank you. <em>You're on the list.</em></h2>
+      <p style="color:var(--muted); max-width:52ch;">Your interest is registered with the Kalibra team. We will brief you before the first cohort opens.</p>
+    </div>
+    <form class="form" data-reveal action="https://formsubmit.co/clientaccess@ascenderagroup.sa" method="POST">
+      <input type="hidden" name="_subject" value="Kalibra website: register interest">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://www.ascenderagroup.sa/kalibra/register/?sent=1">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
       <label for="f-name">Name</label>
       <input id="f-name" name="name" type="text" autocomplete="name" required>
 
@@ -69,7 +80,7 @@
       <textarea id="f-need" name="requirements"></textarea>
 
       <button class="btn" type="submit">Register interest</button>
-      <p class="form__note">Prototype note: this form is not connected yet. Prefer email? Write to <a href="mailto:kalibra@ascenderagroup.sa" style="color:var(--accent);">kalibra@ascenderagroup.sa</a>.</p>
+      <p class="form__note">Straight to the Kalibra team. We brief founding partners before the first cohort opens.</p>
     </form>
   </div>
 </section>

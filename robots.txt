@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://watty5618-svg.github.io/ascendera-website/sitemap.xml
+Sitemap: https://www.ascenderagroup.sa/sitemap.xml
