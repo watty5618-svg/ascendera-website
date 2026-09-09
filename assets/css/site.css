@@ -523,7 +523,10 @@ html,body{ overflow-x:clip; }
 
 /* ---------- focus areas (advisory) ---------- */
 .focus-grid{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(1.5rem,3vw,3rem); }
-.focus-card{ border:1px solid var(--line); display:flex; flex-direction:column; transition:border-color .4s; }
+.focus-card{ border:1px solid var(--line); display:flex; flex-direction:column; transition:border-color .4s; text-decoration:none; }
+.focus-card__cta{ display:inline-flex; align-items:center; gap:.45rem; margin-top:1.4rem; font:600 .72rem/1 var(--font-mono); letter-spacing:.14em; text-transform:uppercase; color:var(--accent); }
+.text-link{ display:inline-flex; align-items:center; gap:.45rem; margin-top:1rem; font:600 .72rem/1 var(--font-mono); letter-spacing:.14em; text-transform:uppercase; color:var(--accent); text-decoration:none; }
+.text-link:hover{ text-decoration:underline; text-underline-offset:4px; }
 .focus-card:hover{ border-color:color-mix(in srgb, var(--accent) 55%, transparent); }
 .focus-card__media{ overflow:hidden; }
 .focus-card__media img, .focus-card__media video{

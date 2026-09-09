@@ -41,6 +41,13 @@
   text-transform:none;
 }
 
+/* Arabic script is never letterspaced: zero the negative tracking
+   the Latin display headings use */
+.ar .h-display,
+.ar .h-serif{
+  letter-spacing:0;
+}
+
 /* serif italic accents: Arabic has no italic; Amiri carries the
    same editorial contrast upright */
 .ar .serif-i,
