@@ -99,10 +99,12 @@ a{ color:inherit; }
 }
 .nav__group:hover{ color:var(--accent); }
 @media (max-width:760px){
-  .nav__links{ gap:1.1rem; }
-  .nav__links a:not(.cta){ display:none; }
+  .nav__links{ gap:.8rem; }
+  .nav__links a:not(.cta):not(.lang-toggle){ display:none; }
   .nav__brand small{ display:none; }
   .nav__group{ display:none; }
+  .nav__links a.cta{ padding:.6rem 1.1rem; font-size:.66rem; }
+  .nav__links a.lang-toggle{ padding:.4rem .66rem; font-size:.66rem; }
 }
 
 /* ---------- hero ---------- */
@@ -127,7 +129,7 @@ a{ color:inherit; }
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='128' height='128' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 .hero__inner{
-  position:relative; z-index:3; padding:0 var(--pad) clamp(3rem,7vh,5.5rem);
+  position:relative; z-index:3; padding:clamp(6rem,13vh,9rem) var(--pad) clamp(3rem,7vh,5.5rem);
   max-width:1600px; width:100%; margin:0 auto;
 }
 .eyebrow{
