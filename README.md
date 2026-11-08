@@ -28,7 +28,7 @@ The practice copy is adapted from the owner's 8 November 2026 draft. Before publ
 
 ## Public delivery summary
 
-The English and Arabic engagement pages describe major infrastructure projects across the Kingdom and Central Asia. Advisory and HSSE practice pages link to the summary and the purpose-written public PDF at `assets/documents/Ascendera-Delivery-in-Practice.pdf` (English, labelled accordingly in Arabic).
+The English and Arabic engagement pages describe major infrastructure projects across the Kingdom and Central Asia. Advisory and HSSE practice pages link to the on-page summary. There is no downloadable delivery document on the website.
 
 Keep client identity, specific countries within Central Asia, asset technologies, project imagery, exact counts, timeframes and financial figures out of this delivery story, including metadata and downloads. Describe the work and handover materials without inferring a complete Veriso deployment or quantified performance results. Further client or project disclosure requires client written consent; an NDA alone does not authorise it. Never add the confidential source document to this repository.
 
