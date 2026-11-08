@@ -224,3 +224,25 @@
   if (form) form.style.display = "none";
   window.scrollTo(0, 0);
 })();
+
+/* Carry the selected HSSE service into the enquiry without overwriting user input. */
+(function () {
+  var select = document.getElementById('f-need');
+  if (!select) return;
+  var service = new URLSearchParams(window.location.search).get('service');
+  var option = Array.from(select.options).find(function (item) { return item.value === service; });
+  if (option && !select.value) select.value = option.value;
+  function updateService() {
+    var detail = document.getElementById('service-detail');
+    if (detail) detail.value = /^hsse(?:-\d+)?$/.test(select.value) ? select.options[select.selectedIndex].text : '';
+    var language = document.querySelector('.lang-toggle');
+    if (language) {
+      var target = new URL(language.href);
+      if (/^hsse(?:-\d+)?$/.test(select.value)) target.searchParams.set('service', select.value);
+      else target.searchParams.delete('service');
+      language.href = target.href;
+    }
+  }
+  select.addEventListener('change', updateService);
+  updateService();
+})();

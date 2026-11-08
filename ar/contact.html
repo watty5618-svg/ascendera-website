@@ -33,7 +33,7 @@
   <a class="nav__brand" href="index.html"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M6 40 V28 h7 v12 Z" fill="currentColor" opacity=".38"/><path d="M19.5 40 V19 h7 v21 Z" fill="currentColor" opacity=".64"/><path class="bar-t" d="M33 40 V8 h7 v32 Z" fill="#2bb3bd"/><circle cx="36.5" cy="4" r="2.2" fill="currentColor"/></svg>ASCENDERA<small>المجموعة · الرياض</small></a>
   <button class="nav__toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" hidden>القائمة</button>
   <nav class="nav__links" id="primary-navigation" aria-label="التنقل الرئيسي"><a class="nav__home" href="index.html">المجموعة</a>
-    <a href="advisory/index.html">Advisory</a>
+    <a href="advisory/index.html">الاستشارات والتنفيذ</a>
     <a href="veriso/index.html">Veriso</a>
     <a href="kalibra/index.html">Kalibra</a>
     <a href="leadership/index.html">القيادة</a>
@@ -75,13 +75,14 @@
       <input id="f-email" name="email" type="email" autocomplete="email" required>
 
       <label for="f-need">ما الذي تحتاجه؟</label>
+      <input type="hidden" id="service-detail" name="service_detail" value="">
       <select id="f-need" name="topic" required>
         <option value="" selected disabled>اختر واحداً</option>
-        <option>Advisory: العناية الواجبة أو الصحة والسلامة والبيئة</option>
-        <option>Veriso: تقنية التوثيق والتحقق</option>
+        <option>الاستشارات والتنفيذ: احتياجات أخرى</option>
+        <option>منصة فيريسو</option>
         <option>Kalibra: المركز التطبيقي</option>
         <option>أمر آخر</option>
-      </select>
+      <option value="hsse">الصحة والسلامة والأمن والبيئة: ناقش احتياجاتك</option><option value="hsse-1">تأسيس وظيفة الصحة والسلامة والأمن والبيئة</option><option value="hsse-2">تصميم الفريق وتأسيسه</option><option value="hsse-3">حوكمة مجلس الإدارة والتقارير</option><option value="hsse-4">الميزانية ونموذج التشغيل</option><option value="hsse-5">نظام الإدارة والمعايير</option><option value="hsse-6">إدارة المخاطر الحرجة</option><option value="hsse-7">سلامة العمليات وإدارة الحواجز</option><option value="hsse-8">التأهيل المسبق للمقاولين واختيارهم</option><option value="hsse-9">جاهزية التعبئة وبدء العمل</option><option value="hsse-10">تقييم أداء السلامة</option><option value="hsse-11">برامج النضج وتحسين الأداء</option><option value="hsse-12">التحقق المستقل</option><option value="hsse-13">التحقيق في الحوادث والتعلم</option><option value="hsse-14">إدارة وظيفة الصحة والسلامة والأمن والبيئة</option></select>
 
       <label for="f-msg">الموقف في بضعة أسطر</label>
       <textarea id="f-msg" name="message"></textarea>
@@ -95,7 +96,7 @@
 <footer class="footer">
   <div class="footer__brand"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M6 40 V28 h7 v12 Z" fill="currentColor" opacity=".38"/><path d="M19.5 40 V19 h7 v21 Z" fill="currentColor" opacity=".64"/><path class="bar-t" d="M33 40 V8 h7 v32 Z" fill="#2bb3bd"/><circle cx="36.5" cy="4" r="2.2" fill="currentColor"/></svg>ASCENDERA<small>ننصح · نتحقق · نثبت · الرياض، السعودية</small></div>
   <nav>
-    <a href="advisory/index.html">Advisory</a>
+    <a href="advisory/index.html">الاستشارات والتنفيذ</a>
     <a href="veriso/index.html">Veriso</a>
     <a href="kalibra/index.html">Kalibra</a>
     <a href="leadership/index.html">القيادة</a>

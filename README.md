@@ -12,6 +12,16 @@ The November 2026 editions include Veriso Platform, Process and Barrier, and Bar
 
 The former Comply URL is retained, with the current Social & Welfare module name displayed. Internal links and existing bookmarks continue to work.
 
+## Advisory & Delivery practice
+
+The HSSE & Critical Risk pages are `advisory/hsse/index.html` and `ar/advisory/hsse/index.html`. They present Build, Run and Prove, fourteen services in four groups, a dedicated managed-function section, delivery steps, the independence boundary and relevant Veriso films. Keep both editions aligned when changing scope or deliverables.
+
+Group and Advisory pages introduce the practice, and the Veriso overview, Barrier and Process pages link back to it. Existing Advisory URLs are preserved. Practice-specific layout rules are in `assets/css/practice.css`.
+
+Service enquiries use allowlisted `service=hsse` or `service=hsse-1` through `hsse-14` parameters. The contact form preselects the matching service, records its readable name in `service_detail`, and retains the selection when switching language. No message is sent until the visitor submits the existing form.
+
+The practice copy is adapted from the owner's 8 November 2026 draft. Before public release, resolve that draft's managed-service activity-scope question and outstanding certification evidence and product-naming decisions. The new pages make no certification claim; the Advisory hub's unsupported certification wording has been removed. Certification statements elsewhere in the older site have not been reconciled by this change.
+
 ## Preview and checks
 
 ```text
