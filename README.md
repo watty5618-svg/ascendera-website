@@ -45,4 +45,4 @@ git diff --check
 
 The checker validates local links and anchors, language metadata, sitemap coverage, paired media, caption timing, MP4 duration and fast-start ordering. Also review desktop and phone layouts, Arabic direction and shaping, keyboard navigation, reduced motion, and actual browser playback before release.
 
-The video metadata intentionally omits a first-publication date until the new watch pages are published. Set each VideoObject's `uploadDate` to the actual publication timestamp during release.
+VideoObject metadata records the first website publication on 8 November 2026. Preserve this date for the existing editions; use the actual publication timestamp for future new editions.
