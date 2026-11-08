@@ -27,5 +27,12 @@
 .film-related h2{margin-bottom:1rem}
 .film-watch[id],.film-section[id]{scroll-margin-top:6rem}
 .film-watch>h2{font-size:clamp(1.6rem,3vw,2.5rem)}
+.practice-film-feature{max-width:1200px;margin:0 auto 3rem;padding:0 var(--pad)}
+.practice-film-feature>a{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:2rem;padding:1.5rem;border:1px solid #d9a44180;text-decoration:none;background:var(--ink-deep)}
+.practice-film-feature img{width:100%;height:auto;align-self:center}
+.practice-film-feature .eyebrow,.practice-film-feature strong{color:#d9a441}
+.practice-film-feature h2{font-size:clamp(1.5rem,2.5vw,2.2rem);margin:.5rem 0}
+.practice-film-feature p:not(.eyebrow){color:var(--muted);line-height:1.7;margin:1rem 0}
+@media(max-width:700px){.practice-film-feature>a{grid-template-columns:1fr;gap:1rem;padding:1rem}}
 @media(max-width:900px){.film-grid{grid-template-columns:1fr}.film-grid--single{grid-template-columns:1fr}.film-intro{padding-top:7rem}}
 .ar .film-intro h1,.ar .film-card h3{letter-spacing:0;line-height:1.5}
