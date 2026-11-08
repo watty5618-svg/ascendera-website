@@ -22,6 +22,10 @@
 <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}.hero__sub,.hero__actions,.hero__meta{opacity:1!important;transform:none!important}.w>span{transform:none!important}</style></noscript>
 <link rel="stylesheet" href="../../../assets/css/site.css">
 <link rel="stylesheet" href="../../../assets/css/ar.css">
+<link rel="stylesheet" href="../../../assets/css/video.css">
+<link rel="alternate" hreflang="en" href="https://www.ascenderagroup.sa/veriso/process/">
+<link rel="alternate" hreflang="ar" href="https://www.ascenderagroup.sa/ar/veriso/process/">
+<link rel="alternate" hreflang="x-default" href="https://www.ascenderagroup.sa/veriso/process/">
 </head>
 <body class="brand-veriso ar">
 <span class="progress"></span>
@@ -29,9 +33,11 @@
 <header class="nav">
   <a class="nav__group" href="../index.html"><span class="arr">←</span> Veriso</a>
   <a class="nav__brand" href="index.html"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M6 40 V28 h7 v12 Z" fill="currentColor" opacity=".38"/><path d="M19.5 40 V19 h7 v21 Z" fill="currentColor" opacity=".64"/><path class="bar-t" d="M33 40 V8 h7 v32 Z" fill="#2bb3bd"/><circle cx="36.5" cy="4" r="2.2" fill="currentColor"/></svg>PROCESS<small>من Veriso</small></a>
-  <nav class="nav__links">
+  <button class="nav__toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" hidden>القائمة</button>
+  <nav class="nav__links" id="primary-navigation" aria-label="التنقل الرئيسي"><a class="nav__home" href="../../index.html">المجموعة</a>
     <a href="../barrier/index.html">Barrier</a>
-    <a class="cta" href="../../contact.html">جرّبها على موادك</a>
+    <a href="../videos/index.html">مكتبة الفيديو</a>
+    <a class="cta" href="../../contact.html">جرّبها على وثائقك</a>
     <a class="lang-toggle" href="../../../veriso/process/index.html" lang="en">EN</a>
   </nav>
 </header>
@@ -42,14 +48,14 @@
   <div class="hero__noise"></div>
   <div class="hero__inner">
     <p class="eyebrow">Veriso Process · نقطة الدخول · التشغيل</p>
-    <h1 class="h-display" data-words>هل حواجز حماية المنشأة <em>سليمة؟</em></h1>
+    <h1 class="h-display">هل حواجز حماية المنشأة <em>سليمة؟</em></h1>
     <p class="hero__sub">يفحص Process حواجز الحماية في المنشآت العاملة بالمعيار نفسه المعمول به في موقع الإنشاء، فتتحدث المنشأة والمشروع لغة واحدة.</p>
     <nav class="detail-nav">
       <a href="../qualify/index.html">Qualify</a>
       <a href="../ready/index.html">Ready</a>
       <a href="../control/index.html">Control</a>
       <a class="active" href="index.html">Process</a>
-      <a href="../comply/index.html">Comply</a>
+      <a href="../comply/index.html">الشؤون الاجتماعية ورفاه العاملين</a>
       <a href="../environment/index.html">Environment</a>
     </nav>
   </div>
@@ -59,7 +65,7 @@
   <div class="wrap">
     <div class="section__head">
       <p class="eyebrow" data-reveal>ماذا يفعل</p>
-      <h2 class="h-serif" data-reveal>ملف السلامة، <em>تم الحفاظ عليه بصدق.</em></h2>
+      <h2 class="h-serif" data-reveal>ملف السلامة، <em>يعكس الواقع الحالي.</em></h2>
     </div>
     <div class="steps">
       <div class="step" data-reveal>
@@ -69,7 +75,7 @@
       </div>
       <div class="step" data-reveal>
         <span class="step__n">02</span>
-        <h3>تحقق الميداني وفق المعيار</h3>
+        <h3>تحقق ميداني وفق معيار موحّد</h3>
         <p>تُفحص الحواجز في مواقعها بواسطة أشخاص محددين بالاسم، مع تسجيل المكان والوقت. وإذا كانت الدراسة التي تستند إليها قديمة، يعكس التقييم ذلك.</p>
       </div>
       <div class="step" data-reveal>
@@ -88,20 +94,20 @@
       <h2 class="h-serif" data-reveal>المخرَج</h2>
     </div>
     <div class="spec-list" data-reveal>
-      <div class="spec"><b>المخرَج</b><div>سجل حواجز للأصل العامل: الحالة الراهنة، مع الإشارة إلى الأسس المتدهورة، وربط كل قرار ببند الدراسة الذي يتم التحقق منه.</div></div>
+      <div class="spec"><b>المخرَج</b><div>سجل حواجز للأصل العامل: الحالة الراهنة، مع الإشارة إلى الأسس التي تراجعت صلاحيتها، وربط كل قرار ببند الدراسة الذي يتم التحقق منه.</div></div>
       <div class="spec"><b>ما الذي يزيله</b><div>ملف السلامة الذي يصف أصلاً لم يعد موجوداً: المنشأة تغيرت، والطواقم تغيرت، والوثيقة لم تتغير.</div></div>
-      <div class="spec"><b>من يقرأه</b><div>ترى الجهات الفنية المختصة حالة الحواجز مقارنةً بمعايير الأداء. ويرى المسؤولون عن الواجبات ما هم مساءلون عنه اليوم، ليس عن ما كان قائماً في آخر تدقيق.</div></div>
+      <div class="spec"><b>من يقرأه</b><div>ترى الجهات الفنية المختصة حالة الحواجز مقارنةً بمعايير الأداء. ويرى المسؤولون عن الواجبات ما هم مساءلون عنه اليوم، لا عما كان قائماً في آخر تدقيق.</div></div>
       <div class="spec"><b>التسليم</b><div>Control ↔ Process. الأصول العاملة وحزم الإنشاء موثّقة بالطريقة نفسها، في سجل واحد.</div></div>
     </div>
   </div>
 </section>
 
 <section class="cta-band">
-  <p class="eyebrow">الاختبار الصادق</p>
+  <p class="eyebrow">اختبرها على واقع عملك</p>
   <h2 data-reveal>أعطنا دراسة واحدة <span class="accent serif-i">حرجة للسلامة.</span></h2>
   <p data-reveal>سترى أي الحواجز مُثبتة اليوم، وأسرع طريق لتحديث كل حاجز.</p>
   <div class="hero__actions" data-reveal>
-    <a class="btn" href="../../contact.html">اطلب تشغيلاً</a>
+    <a class="btn" href="../../contact.html">اطلب عرضاً على بياناتك</a>
     <a class="btn btn--ghost" href="../barrier/index.html">انظر أيضاً: Veriso Barrier ←</a>
   </div>
 </section>
@@ -109,6 +115,7 @@
 <footer class="footer">
   <div class="footer__brand"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M6 40 V28 h7 v12 Z" fill="currentColor" opacity=".38"/><path d="M19.5 40 V19 h7 v21 Z" fill="currentColor" opacity=".64"/><path class="bar-t" d="M33 40 V8 h7 v32 Z" fill="#2bb3bd"/><circle cx="36.5" cy="4" r="2.2" fill="currentColor"/></svg>VERISO<small>تقنية التوثيق من مجموعة أسينديرا</small></div>
   <nav>
+    <a href="../videos/index.html">مكتبة الفيديو</a>
     <a href="../../index.html">المجموعة</a>
     <a href="../../advisory/index.html">Advisory</a>
     <a href="../../kalibra/index.html">Kalibra</a>

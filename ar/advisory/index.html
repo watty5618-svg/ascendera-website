@@ -22,6 +22,9 @@
 <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}.hero__sub,.hero__actions,.hero__meta{opacity:1!important;transform:none!important}.w>span{transform:none!important}</style></noscript>
 <link rel="stylesheet" href="../../assets/css/site.css">
 <link rel="stylesheet" href="../../assets/css/ar.css">
+<link rel="alternate" hreflang="en" href="https://www.ascenderagroup.sa/advisory/">
+<link rel="alternate" hreflang="ar" href="https://www.ascenderagroup.sa/ar/advisory/">
+<link rel="alternate" hreflang="x-default" href="https://www.ascenderagroup.sa/advisory/">
 </head>
 <body class="brand-advisory ar">
 <span class="progress"></span>
@@ -29,7 +32,8 @@
 <header class="nav">
   <a class="nav__group" href="../index.html"><span class="arr">←</span> مجموعة أسينديرا</a>
   <a class="nav__brand" href="index.html"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M6 40 V28 h7 v12 Z" fill="currentColor" opacity=".38"/><path d="M19.5 40 V19 h7 v21 Z" fill="currentColor" opacity=".64"/><path class="bar-t" d="M33 40 V8 h7 v32 Z" fill="#2bb3bd"/><circle cx="36.5" cy="4" r="2.2" fill="currentColor"/></svg>ADVISORY<small>من أسينديرا</small></a>
-  <nav class="nav__links">
+  <button class="nav__toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" hidden>القائمة</button>
+  <nav class="nav__links" id="primary-navigation" aria-label="التنقل الرئيسي"><a class="nav__home" href="../index.html">المجموعة</a>
     <a href="#engage">كيف نعمل معك</a>
     <a href="#record">سجل الأداء</a>
     <a href="#focus">مجالات التركيز</a>
@@ -45,7 +49,7 @@
   <div class="hero__noise"></div>
   <div class="hero__inner">
     <p class="eyebrow">أسينديرا Advisory · الصحة والسلامة والبيئة · الاستثمار</p>
-    <h1 class="h-display" data-words>كبار الممارسين. معك في مشروعك <em>من البداية إلى النهاية.</em></h1>
+    <h1 class="h-display">كبار الممارسين. معك في مشروعك <em>من البداية إلى النهاية.</em></h1>
     <p class="hero__sub">كبار ممارسين قادوا استشارات الصحة والسلامة والبيئة والاستثمار في مشاريع البنية التحتية والطاقة عبر خمس قارات. نحن لا نتعاقد من الباطن على العمل. نحن نؤديه.</p>
     <div class="hero__actions">
       <a class="btn" href="../contact.html">ابدأ من بياناتك</a>
@@ -58,8 +62,8 @@
 <!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee__track">
-    <span>كبار ممارسين، لا مستشارون نظريون</span><span>خبرة مثبتة في الأسواق الريادية</span><span>صحة وسلامة وبيئة متكاملة</span><span>مصداقية لدى مؤسسات التمويل التنموي</span><span>تنفيذ بقيادة كبار الممارسين</span><span>منهجية مجرّبة ميدانياً</span>
-    <span>كبار ممارسين، لا مستشارون نظريون</span><span>خبرة مثبتة في الأسواق الريادية</span><span>صحة وسلامة وبيئة متكاملة</span><span>مصداقية لدى مؤسسات التمويل التنموي</span><span>تنفيذ بقيادة كبار الممارسين</span><span>منهجية مجرّبة ميدانياً</span>
+    <span>كبار ممارسين، لا مستشارون نظريون</span><span>خبرة مثبتة في الأسواق الناشئة والحدودية</span><span>صحة وسلامة وبيئة متكاملة</span><span>مصداقية لدى مؤسسات التمويل التنموي</span><span>تنفيذ بقيادة كبار الممارسين</span><span>منهجية مجرّبة ميدانياً</span>
+    <span>كبار ممارسين، لا مستشارون نظريون</span><span>خبرة مثبتة في الأسواق الناشئة والحدودية</span><span>صحة وسلامة وبيئة متكاملة</span><span>مصداقية لدى مؤسسات التمويل التنموي</span><span>تنفيذ بقيادة كبار الممارسين</span><span>منهجية مجرّبة ميدانياً</span>
   </div>
 </div>
 
@@ -68,7 +72,7 @@
   <div class="wrap">
     <div class="section__head">
       <p class="eyebrow" data-reveal>كيف نعمل معك</p>
-      <h2 class="h-serif" data-reveal>نُسعّر على أساس القيمة، <em>ونحدّد النطاق استناداً على الأدلة.</em></h2>
+      <h2 class="h-serif" data-reveal>نُسعّر على أساس القيمة، <em>ونحدّد النطاق استناداً إلى الأدلة.</em></h2>
       <p data-reveal>نبدأ من بياناتك، وندع التقنية ترسم الطريق إلى التحسين، ثم نصمم الحل الذي يوصلك إليه بشكل صحيح من المرة الأولى.</p>
     </div>
     <div class="steps">
@@ -85,7 +89,7 @@
       <div class="step" data-reveal>
         <span class="step__n">03</span>
         <h3>نغلق الفجوات معك</h3>
-        <p>النتائج لا قيمة لها إلا إذا أُصلحت. نعمل مع فرقك ومقاوليك حتى يصبح الإصلاح في مكانه ومثبتاً.</p>
+        <p>لا تكتمل قيمة التقييم إلا بمعالجة الفجوات التي يكشفها. نعمل مع فرقك ومقاوليك حتى يصبح الإصلاح في مكانه ومثبتاً.</p>
       </div>
       <div class="step" data-reveal>
         <span class="step__n">04</span>
@@ -109,7 +113,7 @@
       </div>
       <div class="split__body">
         <p data-reveal>لمطوّر طاقة دولي، أدرنا منظومة التوثيق الكاملة كنظام متصل واحد عبر برامج رأسمالية كبرى، من اختيار المقاولين حتى التشغيل الفعلي.</p>
-        <p data-reveal>في ذروتها، كان عشرة آلاف شخص على الأرض. قبل أن يُرفع أي رقم، كنا نتحقق من الدليل خلفه بأنفسنا. كل نتيجة جاءت بدليلها وطريق إصلاحها. ولكل قرار في مجلس الإدارة مالك مسمّى.</p>
+        <p data-reveal>في ذروتها، كان عشرة آلاف شخص على الأرض. قبل أن يُرفع أي رقم، كنا نتحقق من الدليل خلفه بأنفسنا. كل نتيجة جاءت بدليلها وطريق إصلاحها. ولكل قرار في مجلس الإدارة مسؤول محدد بالاسم.</p>
         <p data-reveal><em class="serif-i">حُجبت هوية العميل بموجب اتفاقية سرية. المرجع المسمّى وتفاصيل المهمة الكاملة متاحة بموجب اتفاقية عدم إفصاح.</em></p>
         <p data-reveal style="margin-top:1.6rem;"><a href="engagement/index.html" style="font-family:var(--font-mono); font-size:.9rem; color:var(--accent-ink); text-decoration:underline; text-underline-offset:4px;">اقرأ سجل المهمة الكامل ←</a></p>
       </div>
@@ -160,7 +164,7 @@
     <div class="partners" data-reveal>
       <div class="partner"><img src="../../assets/img/person-daniel.jpg" alt="د. دانيال كوبر"><div><span>د. دانيال كوبر</span><small>قائد الممارسة · المؤسسة عالية الأداء · شراكة حصرية</small></div></div>
       <div class="partner"><img src="../../assets/img/person-lee.jpg" alt="لي ستيفنسون"><div><span>لي ستيفنسون</span><small>قائد الممارسة · خطوط النقل الهوائية والأعمال فائقة الخطورة · شراكة حصرية</small></div></div>
-      <div class="partner"><img src="../../assets/img/person-simon.jpg" alt="سايمون واتسون"><div><span>سايمون واتسون</span><small>مستشار مجلس الإدارة · التقنية والخدمات الخبيرة</small></div></div>
+      <div class="partner"><img src="../../assets/img/person-simon.jpg" alt="سايمون واتسون"><div><span>سايمون واتسون</span><small>مستشار مجلس الإدارة · التقنية والخدمات المتخصصة</small></div></div>
     </div>
     <p class="partners-note">خبراء مسمّون يعملون معنا حصرياً.</p>
   </div>
@@ -176,7 +180,7 @@
     <div class="principles">
       <div class="principle" data-reveal>
         <small>01</small>
-        <h3>خبرة مثبتة في الأسواق الريادية</h3>
+        <h3>خبرة مثبتة في الأسواق الناشئة والحدودية</h3>
         <p>عقود من قيادة السلامة والبيئة والعناية الواجبة عبر خمس قارات، في الأسواق التي يصعب فيها التمسك بالمعايير.</p>
       </div>
       <div class="principle" data-reveal>

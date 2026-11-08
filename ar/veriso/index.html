@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Veriso · تقنية التوثيق للأعمال التي قد تودي بحياة الناس</title>
-<meta name="description" content="منتجان، وسجل واحد موثّق. تحوّل Veriso دراساتك وخططك إلى ضوابط لها مالكون مسمّون، وتستعيد الأدلة من الميدان باسم مرفق بها.">
+<title>Veriso · التحقق القائم على الأدلة للأعمال عالية الخطورة</title>
+<meta name="description" content="منتجان، وسجل واحد موثّق. تحوّل Veriso دراساتك وخططك إلى ضوابط لها مالكون مسمّون، وتجمع الأدلة الميدانية مع توثيق المسؤول عنها.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@1,6..72,300..400&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -12,16 +12,20 @@
 <link rel="canonical" href="https://www.ascenderagroup.sa/ar/veriso/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ascendera Group">
-<meta property="og:title" content="Veriso · تقنية التوثيق للأعمال التي قد تودي بحياة الناس">
-<meta property="og:description" content="منتجان، وسجل واحد موثّق. تحوّل Veriso دراساتك وخططك إلى ضوابط لها مالكون مسمّون، وتستعيد الأدلة من الميدان باسم مرفق بها.">
+<meta property="og:title" content="Veriso · التحقق القائم على الأدلة للأعمال عالية الخطورة">
+<meta property="og:description" content="منتجان، وسجل واحد موثّق. تحوّل Veriso دراساتك وخططك إلى ضوابط لها مالكون مسمّون، وتجمع الأدلة الميدانية مع توثيق المسؤول عنها.">
 <meta property="og:url" content="https://www.ascenderagroup.sa/ar/veriso/">
 <meta property="og:image" content="https://www.ascenderagroup.sa/assets/img/veriso-hero-v2.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Veriso · تقنية التوثيق للأعمال التي قد تودي بحياة الناس">
-<meta name="twitter:description" content="منتجان، وسجل واحد موثّق. تحوّل Veriso دراساتك وخططك إلى ضوابط لها مالكون مسمّون، وتستعيد الأدلة من الميدان باسم مرفق بها.">
+<meta name="twitter:title" content="Veriso · التحقق القائم على الأدلة للأعمال عالية الخطورة">
+<meta name="twitter:description" content="منتجان، وسجل واحد موثّق. تحوّل Veriso دراساتك وخططك إلى ضوابط لها مالكون مسمّون، وتجمع الأدلة الميدانية مع توثيق المسؤول عنها.">
 <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}.hero__sub,.hero__actions,.hero__meta{opacity:1!important;transform:none!important}.w>span{transform:none!important}</style></noscript>
 <link rel="stylesheet" href="../../assets/css/site.css">
 <link rel="stylesheet" href="../../assets/css/ar.css">
+<link rel="stylesheet" href="../../assets/css/video.css">
+<link rel="alternate" hreflang="en" href="https://www.ascenderagroup.sa/veriso/">
+<link rel="alternate" hreflang="ar" href="https://www.ascenderagroup.sa/ar/veriso/">
+<link rel="alternate" hreflang="x-default" href="https://www.ascenderagroup.sa/veriso/">
 </head>
 <body class="brand-veriso ar">
 <span class="progress"></span>
@@ -29,11 +33,13 @@
 <header class="nav">
   <a class="nav__group" href="../index.html"><span class="arr">←</span> مجموعة أسينديرا</a>
   <a class="nav__brand" href="index.html"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M6 40 V28 h7 v12 Z" fill="currentColor" opacity=".38"/><path d="M19.5 40 V19 h7 v21 Z" fill="currentColor" opacity=".64"/><path class="bar-t" d="M33 40 V8 h7 v32 Z" fill="#2bb3bd"/><circle cx="36.5" cy="4" r="2.2" fill="currentColor"/></svg>VERISO<small>تقنية التوثيق</small></a>
-  <nav class="nav__links">
+  <button class="nav__toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" hidden>القائمة</button>
+  <nav class="nav__links" id="primary-navigation" aria-label="التنقل الرئيسي"><a class="nav__home" href="../index.html">المجموعة</a>
     <a href="#products">المنصة</a>
     <a href="barrier/index.html">Barrier</a>
     <a href="doctrine/index.html">المنهج</a>
-    <a class="cta" href="../contact.html">جرّبها على موادك</a>
+    <a href="videos/index.html">مكتبة الفيديو</a>
+    <a class="cta" href="../contact.html">جرّبها على وثائقك</a>
     <a class="lang-toggle" href="../../veriso/index.html" lang="en">EN</a>
   </nav>
 </header>
@@ -45,11 +51,11 @@
   <div class="hero__noise"></div>
   <div class="hero__inner">
     <p class="eyebrow">Veriso · منظومة التوثيق</p>
-    <h1 class="h-display" data-words>ما الذي يحمي أفرادك اليوم؟ <em>الضوابط التي يمكنك إثباتها.</em></h1>
-    <p class="hero__sub">تأخذ Veriso دراسات وخطط السلامة التي لديك بالفعل وتحوّلها إلى إجراءات واضحة لأشخاص مسمّين، ثم تتحقق ميدانياً من أنها تحدث فعلاً، بدليل مرفق.</p>
+    <h1 class="h-display">ما الذي يحمي أفرادك اليوم؟ <em>الضوابط التي يمكنك إثباتها.</em></h1>
+    <p class="hero__sub">تربط Veriso المتطلبات المنطبقة على مؤسستك بما يقدمه نظام إدارتك وبما يحدث فعلياً في الميدان. تكشف الفجوات، وتقترح التحسينات وفق نماذجك، وتتحقق من النتائج ضمن دورة مستمرة من التعلم والتحسين.</p>
     <div class="hero__actions">
-      <a class="btn" href="../contact.html">جرّبها على موادك الخاصة</a>
-      <a class="btn btn--ghost" href="#products">المنتجات الستة</a>
+      <a class="btn" href="../contact.html">جرّبها على وثائقك وبياناتك</a>
+      <a class="btn btn--ghost" href="#products">الوحدات الست</a>
     </div>
   </div>
   <div class="hero__meta">منتجان · سجل واحد<br>الاعتماد على الدليل فقط<br>البيانات محفوظة داخل المملكة</div>
@@ -58,8 +64,8 @@
 <!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee__track">
-    <span>كل بند مثبّت بمصدره</span><span>كل حكم موثّق بشاهد</span><span>كل ادعاء محدود بسقفه</span><span>معيار دليل واحد</span><span>نموذج ثقة واحد</span><span>قابلة للتصدير بالتصميم</span>
-    <span>كل بند مثبّت بمصدره</span><span>كل حكم موثّق بشاهد</span><span>كل ادعاء محدود بسقفه</span><span>معيار دليل واحد</span><span>نموذج ثقة واحد</span><span>قابلة للتصدير بالتصميم</span>
+    <span>كل بند مثبّت بمصدره</span><span>كل نتيجة مرتبطة بدليل التحقق</span><span>كل استنتاج ضمن حدود أدلته</span><span>معيار دليل واحد</span><span>نموذج ثقة واحد</span><span>سجلات قابلة للتصدير</span>
+    <span>كل بند مثبّت بمصدره</span><span>كل نتيجة مرتبطة بدليل التحقق</span><span>كل استنتاج ضمن حدود أدلته</span><span>معيار دليل واحد</span><span>نموذج ثقة واحد</span><span>سجلات قابلة للتصدير</span>
   </div>
 </div>
 
@@ -69,7 +75,7 @@
     <div class="section__head">
       <p class="eyebrow" data-reveal>لماذا نحن موجودون</p>
       <h2 class="h-serif" data-reveal>ثلاث نقاط ضعف في التوثيق. <em>ثلاث نقاط قوة في Veriso.</em></h2>
-      <p data-reveal>المعايير موجودة، والأساليب تعمل، ومعظم المؤسسات لديها أشخاص أكفاء. ما كان ينقص هو نظام يحفظ كل ذلك حديثاً وقابلاً للإثبات. ذلك النظام هو Veriso.</p>
+      <p data-reveal>المعايير موجودة، والأساليب تعمل، ومعظم المؤسسات لديها أشخاص أكفاء. ما كان ينقص هو نظام يبقي كل ذلك محدثاً وقابلاً للإثبات. ذلك النظام هو Veriso.</p>
     </div>
     <div class="steps">
       <div class="step" data-reveal>
@@ -102,7 +108,7 @@
       <div class="step" data-reveal>
         <span class="step__n">الخطوة 1</span>
         <h3>وثائقك تصبح ضوابط</h3>
-        <p>دراساتك وخططك الحالية تصبح قائمة إجراءات واضحة قابلة للتحقق، كل واحد مرتبط بالوثيقة التي جاء منها بالضبط.</p>
+        <p>دراساتك وخططك الحالية تصبح قائمة إجراءات واضحة قابلة للتحقق، يرتبط كل منها بالوثيقة التي جاء منها بالضبط.</p>
       </div>
       <div class="step" data-reveal>
         <span class="step__n">الخطوة 2</span>
@@ -119,6 +125,10 @@
 </section>
 
 
+
+<!-- VERISO FILMS -->
+<section class="section section--dim film-section" id="films"><div class="wrap"><div class="section__head"><p class="eyebrow">مكتبة الفيديو</p><h2 class="h-serif">منصة التحقق القائم على الأدلة</h2><p>ربط المتطلبات ونظام الإدارة والواقع الميداني، في دورة متكررة من التعلّم والتحسين والتحقق.</p></div><div class="film-grid film-grid--single"><a class="film-card" href="watch/assurance-platform/index.html"><div class="film-card__image"><img src="../../assets/video/2026-11/assurance-platform/ar.png" alt="" loading="lazy" width="1920" height="1080"><span class="film-card__play" aria-hidden="true">▶</span><span class="film-card__time" dir="ltr">7:32</span></div><div class="film-card__copy"><h3>منصة فيريسو</h3><p>ربط المتطلبات ونظام الإدارة والواقع الميداني، في دورة متكررة من التعلّم والتحسين والتحقق.</p><strong>شاهد الفيلم</strong></div></a></div><div class="film-links"><a href="videos/index.html">تصفّح جميع أفلام Veriso</a></div></div></section>
+
 <!-- TWO PRODUCTS -->
 <section class="section">
   <div class="wrap">
@@ -132,13 +142,13 @@
         <span class="duo__idx">المنتج 01 · توثيق البرامج</span>
         <h3>منصة Veriso للتوثيق</h3>
         <p class="duo__tag">الضوابط التي يمكنك إثباتها، عبر البرنامج كله.</p>
-        <p class="duo__desc">ستة منتجات تحوّل الوثائق التي لديك بالفعل إلى إجراءات واضحة لمسؤولين محددين بالاسم، وتجلب الأدلة من الميدان، بدءاً من اختيار المقاول وحتى تشغيل الموقع.</p>
-        <span class="duo__go">المنتجات الستة <i>↓</i></span>
+        <p class="duo__desc">ست وحدات تحوّل الوثائق التي لديك بالفعل إلى إجراءات واضحة لمسؤولين محددين بالاسم، وتجلب الأدلة من الميدان، بدءاً من اختيار المقاول وحتى تشغيل الموقع.</p>
+        <span class="duo__go">الوحدات الست <i>↓</i></span>
       </a>
       <a class="duo__card" href="barrier/index.html" data-reveal>
         <span class="duo__idx">المنتج 02 · سلامة العمليات</span>
         <h3>Veriso Barrier</h3>
-        <p class="duo__tag">إدارة حواجز الحماية الحية، من HAZOP إلى Bow-tie.</p>
+        <p class="duo__tag">إدارة مستمرة لحواجز الحماية، من دراسة HAZOP إلى مخططات Bow-tie.</p>
         <p class="duo__desc">للمنشآت العاملة. دراسات السلامة التي لديك تصبح صورة حية للحواجز التي تحمي أفرادك، تبقى محدثة مع تغير المنشأة. تعمل خلال أيام، لا أسابيع.</p>
         <span class="duo__go">استكشف Barrier <i>←</i></span>
       </a>
@@ -151,13 +161,13 @@
   <div class="wrap">
     <div class="section__head">
       <p class="eyebrow" data-reveal>المنتج 01 · منصة التوثيق</p>
-      <h2 class="h-serif" data-reveal>ستة منتجات. ستة أسئلة. <em>سجل واحد.</em></h2>
+      <h2 class="h-serif" data-reveal>ست وحدات. ستة أسئلة. <em>سجل واحد.</em></h2>
       <p data-reveal>يجيب كل منتج عن سؤال واحد بإتقان، ويمكن شراؤه بشكل مستقل. حدّد السؤال الذي لا تستطيع الإجابة عنه حالياً وابدأ منه.</p>
     </div>
     <div class="products">
       <div class="product" data-reveal>
         <p class="product__q">"هل ينبغي لهذا المقاول أن يعمل لدينا أصلاً؟"</p>
-        <div><h3><a href="qualify/index.html">Qualify</a></h3><p>اختر المقاولين بناءً على الادله، لا على ما يعرضونه في مستنداتهم. فكل التزام يقدمونه في مرحلة المناقصة يصبح متطلبًا نتحقق منه لاحقاً .</p></div>
+        <div><h3><a href="qualify/index.html">Qualify</a></h3><p>اختر المقاولين بناءً على الأدلة، لا على ما يعرضونه في مستنداتهم. فكل التزام يقدمونه في مرحلة المناقصة يصبح متطلبًا نتحقق منه لاحقاً.</p></div>
         <span class="product__mono">نقطة الدخول · المناقصة<br><a href="qualify/index.html" style="color:var(--accent);">استكشف ←</a></span>
       </div>
       <div class="product" data-reveal>
@@ -176,8 +186,8 @@
         <span class="product__mono">نقطة الدخول · التشغيل<br><a href="process/index.html" style="color:var(--accent);">استكشف ←</a></span>
       </div>
       <div class="product" data-reveal>
-        <p class="product__q">"هل كل عامل في السلسلة موظف ومعامَل بقانونية؟"</p>
-        <div><h3><a href="comply/index.html">Comply</a></h3><p>اعرف من يوظف فعلياً كل عامل في موقعك، وتأكد من معاملتهم ودفع أجورهم بصورة نظامية، وصولاً إلى آخر حلقة في سلسلة التوريد.</p></div>
+        <p class="product__q">"هل كل عامل في السلسلة موظف ويُعامل وفقاً للأنظمة؟"</p>
+        <div><h3><a href="comply/index.html">الشؤون الاجتماعية ورفاه العاملين</a></h3><p>اعرف من يوظف فعلياً كل عامل في موقعك، وتأكد من معاملتهم ودفع أجورهم بصورة نظامية، وصولاً إلى آخر حلقة في سلسلة التوريد.</p></div>
         <span class="product__mono">يعمل عبر المنتجات الأربعة<br><a href="comply/index.html" style="color:var(--accent);">استكشف ←</a></span>
       </div>
       <div class="product" data-reveal>
@@ -195,7 +205,7 @@
     <div class="split__body">
       <p class="eyebrow" data-reveal>البنية</p>
       <h2 class="h-serif" data-reveal>مهما كان الباب الذي تدخل منه، فإن الدليل يصل إلى <em>السجل نفسه.</em></h2>
-      <p data-reveal><strong>معيار إثبات واحد.</strong> الفحص يظل فحص، سواء كان لحاجز حماية، أو لضابط رفع، أو لزيارة لسكن العمال.</p>
+      <p data-reveal><strong>معيار إثبات واحد.</strong> معيار التحقق واحد، سواء كان لحاجز حماية، أو لإجراء تحكم في عمليات الرفع، أو لزيارة لسكن العمال.</p>
       <p data-reveal><strong>طريقة تقييم واحدة.</strong> كل منتج يستخدم المقياس نفسه، فيمكنك المقارنة بين المشاريع دون تخمين.</p>
       <p data-reveal><strong>يُعدّ لك، لا يُعاد بناؤه.</strong> علامتك التجارية، ومتطلباتك، ومواقعك، دون الحاجة إلى برمجيات مخصصة تتطلب صيانة.</p>
       <p data-reveal><strong>بياناتك تبقى لك.</strong> السجلات والأدلة والإعدادات ملك لك، ويمكنك أخذها معك في أي وقت.</p>
@@ -226,14 +236,14 @@
         <p>مبني على الوثائق وحدها، مهما بدت مكتملة. الأوراق لا يمكن أن تتجاوز هذه الدرجة؛ أما الدليل من الميدان فيذهب أبعد.</p>
       </div>
       <div class="band" style="--band-c:#3fe0c5;">
-        <small>الدرجة 03 · بلا سقف للمنهجية</small>
+        <small>الدرجة 03 · دون سقف تفرضه طريقة التحقق</small>
         <h3>ثقة معقولة</h3>
-        <p>تم التحقق منه شخصيا وبشكل مباشر وفي الموقع، مع توثيق المكان والوقت واسم الشخص، وبالاستناد إلى مستندات سارية ومحدّثة.</p>
+        <p>تم التحقق منه شخصياً وبشكل مباشر وفي الموقع، مع توثيق المكان والوقت واسم الشخص، وبالاستناد إلى مستندات سارية ومحدّثة.</p>
       </div>
       <div class="band" style="--band-c:#7a7f96;">
         <small>الدرجة 04</small>
-        <h3>أساس متدهور</h3>
-        <p>تم التحقق منه شخصيا وبشكل مباشر، لكن الوثيقة التي يستند إليها قديمة، لذلك يُقيّد التقييم حتى يتم تحديثها.</p>
+        <h3>تراجع صلاحية أساس التقييم</h3>
+        <p>تم التحقق منه شخصياً وبشكل مباشر، لكن الوثيقة التي يستند إليها قديمة، لذلك يُقيّد التقييم حتى يتم تحديثها.</p>
       </div>
     </div>
     <p style="margin-top:2.2rem;" data-reveal><a href="doctrine/index.html" style="font-family:var(--font-mono); font-size:.9rem; color:var(--accent); text-decoration:underline; text-underline-offset:4px;">المنهج الكامل، القواعد والالتزامات ←</a></p>
@@ -251,7 +261,7 @@
     <div class="refusals">
       <div class="refusal" data-reveal><h3>دليل، مع إرفاق أساسه</h3><p>نرفع تقارير بما وجدناه وكيف وجدناه، فيبقى التوثيق سؤالاً حياً لا شهادة مؤطرة على الجدار.</p></div>
       <div class="refusal" data-reveal><h3>التنفيذ والتحقق منفصلان دائماً</h3><p>الأشخاص الذين يفحصون العمل ليسوا أبداً الأشخاص الذين أدوه. هذا الفصل مكتوب في العقد.</p></div>
-      <div class="refusal" data-reveal><h3>كل رقم موقَّع مدعوم بدليل</h3><p>لحزمة مجلس إدارة، أو مقرض، أو موعد نهائي: إذا وقّعناه، نستطيع أن نريك الدليل خلفه.</p></div>
+      <div class="refusal" data-reveal><h3>كل رقم موقَّع مدعوم بدليل</h3><p>سواء أُعدّ التقرير لمجلس الإدارة أو لمقرض أو لتلبية موعد نهائي: إذا وقّعناه، نستطيع أن نريك الدليل خلفه.</p></div>
       <div class="refusal" data-reveal><h3>درجات الثقة تصمد تحت الضغط</h3><p>يُحدّد كل تقييم بناءً على قوة الدليل الذي يستند إليه، ويُطبّق ذلك تلقائياً، فلا يمكن لأحد التفاوض لرفع التقييم.</p></div>
       <div class="refusal" data-reveal><h3>كل لوحة تفتح على الدليل</h3><p>كل رقم في لوحة المتابعة ينفتح على الدليل خلفه. ما تراه هو ما فُحص فعلاً.</p></div>
       <div class="refusal" data-reveal><h3>العمال محميون بالتصميم</h3><p>تُجمّع ملاحظات العمال قبل أن يطّلع عليها أي شخص، بحيث لا يمكن تحديد هوية أي فرد. يتحدث الناس بحرية، وهذا ما يجعل البيانات ذات قيمة.</p></div>
@@ -273,7 +283,7 @@
         <p>الممارسون والتنفيذ والملكية الفكرية كلها في الرياض.</p>
       </div>
       <div class="principle" data-reveal>
-        <small>إقامة البيانات</small>
+        <small>موقع استضافة البيانات</small>
         <h3>محفوظة داخل المملكة</h3>
         <p>تُخزّن بياناتك على خوادم محددة وقابلة للتدقيق داخل المملكة العربية السعودية، وفقاً لنظام حماية البيانات السعودي. ولا تغادر المملكة إلا إذا طلبت ذلك خطياً.</p>
       </div>
@@ -288,11 +298,11 @@
 
 <!-- CTA -->
 <section class="cta-band">
-  <p class="eyebrow">الاختبار الصادق</p>
+  <p class="eyebrow">اختبرها على واقع عملك</p>
   <h2 data-reveal>شغّله على <span class="accent serif-i">الأدلة التي تملكها بالفعل.</span></h2>
-  <p data-reveal>ابدأ بالوثائق التي لديك بالفعل، وتعرّف على مستوى التوثيق الحقيقي لديك، إلى جانب رؤية واضحة لكيفية جعله اقوى.</p>
+  <p data-reveal>ابدأ بالوثائق التي لديك بالفعل، وتعرّف على مستوى التوثيق الحقيقي لديك، إلى جانب رؤية واضحة لكيفية تعزيزه.</p>
   <div class="hero__actions" data-reveal>
-    <a class="btn" href="../contact.html">اطلب تشغيلاً</a>
+    <a class="btn" href="../contact.html">اطلب عرضاً على بياناتك</a>
     <a class="btn btn--ghost" href="../advisory/index.html">تعرّف على الممارسين ←</a>
   </div>
 </section>
@@ -300,6 +310,7 @@
 <footer class="footer">
   <div class="footer__brand"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M6 40 V28 h7 v12 Z" fill="currentColor" opacity=".38"/><path d="M19.5 40 V19 h7 v21 Z" fill="currentColor" opacity=".64"/><path class="bar-t" d="M33 40 V8 h7 v32 Z" fill="#2bb3bd"/><circle cx="36.5" cy="4" r="2.2" fill="currentColor"/></svg>VERISO<small>تقنية التوثيق من مجموعة أسينديرا</small></div>
   <nav>
+    <a href="videos/index.html">مكتبة الفيديو</a>
     <a href="../index.html">المجموعة</a>
     <a href="../advisory/index.html">Advisory</a>
     <a href="../kalibra/index.html">Kalibra</a>

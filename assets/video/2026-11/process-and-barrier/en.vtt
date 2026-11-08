@@ -1,0 +1,304 @@
+WEBVTT
+
+00:00:00.420 --> 00:00:01.666
+It is three in the morning.
+
+00:00:02.150 --> 00:00:04.046
+Start-up is planned for six.
+
+00:00:04.367 --> 00:00:07.274
+Maintenance records show a transmitter being calibrated.
+
+00:00:07.665 --> 00:00:09.120
+An alarm is inhibited.
+
+00:00:09.511 --> 00:00:11.651
+A temporary bypass remains open.
+
+00:00:12.134 --> 00:00:14.414
+Each record tells part of the story.
+
+00:00:14.805 --> 00:00:17.818
+The question for the person taking the shift is more important:
+
+00:00:18.229 --> 00:00:21.727
+what protection is actually available, and what has changed since the
+
+00:00:21.747 --> 00:00:22.697
+hazard study?
+
+00:00:22.990 --> 00:00:26.720
+Veriso Barrier connects the hazard study to the operating life of
+
+00:00:26.740 --> 00:00:30.636
+the plant. It brings the study, protective functions,
+
+00:00:30.745 --> 00:00:35.266
+equipment, checks and changes into one operator record.
+
+00:00:35.750 --> 00:00:38.111
+Engineers can trace the intended protection.
+
+00:00:38.501 --> 00:00:41.048
+Operations can see its current declared condition.
+
+00:00:41.532 --> 00:00:45.029
+Owners can see what needs attention, who is responsible and when
+
+00:00:45.049 --> 00:00:46.882
+a temporary arrangement expires.
+
+00:00:47.190 --> 00:00:49.307
+The work can begin before a HAZOP.
+
+00:00:49.628 --> 00:00:54.395
+Project information, process descriptions and relevant reference templates
+
+00:00:54.678 --> 00:00:59.399
+help prepare a structured first draft: proposed nodes, parameters,
+
+00:00:59.624 --> 00:01:02.612
+deviations and questions for the study team.
+
+00:01:03.188 --> 00:01:06.385
+Existing assumptions and missing information remain visible.
+
+00:01:06.869 --> 00:01:09.542
+This gives the team an organised starting point for a hazard
+
+00:01:09.562 --> 00:01:13.914
+and operability study, with room for engineering judgement and challenge.
+
+00:01:14.230 --> 00:01:18.773
+The study team examines deviations from design intent, considers causes and
+
+00:01:18.793 --> 00:01:22.999
+consequences, challenges safeguards and records actions.
+
+00:01:23.263 --> 00:01:27.271
+For our vessel, a pressure deviation opens a discussion about how
+
+00:01:27.291 --> 00:01:30.499
+containment could be lost and what would prevent or limit the
+
+00:01:30.519 --> 00:01:35.376
+outcome. Decisions, assumptions and actions belong to the team.
+
+00:01:35.952 --> 00:01:39.724
+Veriso keeps their structure and origin visible as the study develops.
+
+00:01:40.030 --> 00:01:44.712
+Existing studies can enter through signed documents, spreadsheets or scanned
+
+00:01:44.732 --> 00:01:49.193
+records. The converter structures the content and retains the link to
+
+00:01:49.213 --> 00:01:50.866
+the original document and row.
+
+00:01:51.257 --> 00:01:53.397
+An engineer reviews the interpretation.
+
+00:01:53.718 --> 00:01:57.507
+Unreadable or uncertain material is surfaced for resolution.
+
+00:01:57.991 --> 00:02:01.326
+The result is a usable study record whose meaning can always
+
+00:02:01.346 --> 00:02:03.097
+be checked against its source.
+
+00:02:03.390 --> 00:02:07.202
+For major-accident scenarios, the study becomes a bow tie.
+
+00:02:07.686 --> 00:02:11.601
+Causes sit on the left, consequences on the right, and the
+
+00:02:11.621 --> 00:02:13.715
+loss of control sits between them.
+
+00:02:14.292 --> 00:02:18.197
+Prevention and mitigation barriers sit on the paths they protect.
+
+00:02:18.681 --> 00:02:22.589
+The linked register shows the protective function, supporting equipment,
+
+00:02:22.872 --> 00:02:24.501
+ownership and checks.
+
+00:02:24.892 --> 00:02:28.489
+Candidate safety-critical equipment is identified for engineering review.
+
+00:02:28.790 --> 00:02:32.857
+A barrier diagram is only useful if its dependencies are understood.
+
+00:02:33.341 --> 00:02:37.547
+Two apparent protections may depend on the same transmitter, the same
+
+00:02:37.567 --> 00:02:39.452
+logic or the same person.
+
+00:02:40.145 --> 00:02:42.366
+Veriso connects these relationships.
+
+00:02:42.687 --> 00:02:46.034
+A change to one shared dependency can then be traced across
+
+00:02:46.054 --> 00:02:47.846
+every affected protective function.
+
+00:02:48.329 --> 00:02:51.572
+The same temporary stand-in can also be recognised when it is
+
+00:02:51.592 --> 00:02:53.378
+being counted more than once.
+
+00:02:53.670 --> 00:02:58.213
+Maintenance, permits, overrides, change records and
+
+00:02:58.233 --> 00:03:02.335
+field checks connect through agreed interfaces and reporting windows.
+
+00:03:02.726 --> 00:03:05.902
+A work order is linked to the protective function it affects,
+
+00:03:06.127 --> 00:03:08.743
+with the effect reviewed under the operator's rules.
+
+00:03:09.006 --> 00:03:12.342
+If a source stops reporting, the gap remains visible.
+
+00:03:12.826 --> 00:03:15.889
+Silence does not become evidence that the barrier is healthy.
+
+00:03:16.190 --> 00:03:20.152
+When protection is impaired, the record follows the operator's authorisation
+
+00:03:20.172 --> 00:03:24.997
+process. It identifies the affected function, responsible owner,
+
+00:03:25.223 --> 00:03:27.490
+compensating measure and expiry.
+
+00:03:28.183 --> 00:03:31.461
+Temporary arrangements remain visible until properly resolved.
+
+00:03:31.852 --> 00:03:34.828
+Overdue measures and reused stand-ins demand attention.
+
+00:03:35.311 --> 00:03:38.534
+Where the operator classifies a protection as never to be impaired,
+
+00:03:38.759 --> 00:03:41.463
+that restriction remains part of the decision.
+
+00:03:41.750 --> 00:03:44.622
+Management of change follows the same connected record.
+
+00:03:44.943 --> 00:03:48.874
+A proposed change moves through technical review, risk assessment,
+
+00:03:48.983 --> 00:03:53.863
+authorisation, implementation and pre-start-up review before close-out.
+
+00:03:54.439 --> 00:03:57.392
+Temporary changes carry an expiry from the start.
+
+00:03:57.969 --> 00:04:00.375
+The link back to the study makes it possible to see
+
+00:04:00.395 --> 00:04:04.625
+whether the plant, its procedures and its protective arrangements still
+
+00:04:04.645 --> 00:04:06.280
+match the agreed basis.
+
+00:04:06.590 --> 00:04:09.554
+Field checks test the declared picture against what is found on
+
+00:04:09.574 --> 00:04:14.000
+the plant. Checks can be scheduled by calendar, operating hours or
+
+00:04:14.020 --> 00:04:17.959
+starts. The person carrying out the check records the finding and
+
+00:04:17.979 --> 00:04:22.839
+its evidence. Effective, partially effective, ineffective
+
+00:04:22.948 --> 00:04:26.017
+and not-yet-checked conditions stay distinguishable.
+
+00:04:27.012 --> 00:04:30.121
+A missing check cannot quietly become a positive result.
+
+00:04:30.430 --> 00:04:33.615
+At handover, the picture becomes three clear views.
+
+00:04:33.936 --> 00:04:35.264
+Which barriers are out?
+
+00:04:35.469 --> 00:04:38.364
+Which lines of protection are thinner than the study intended?
+
+00:04:38.754 --> 00:04:42.484
+Which compensating measures are carrying the temporary burden, and when do
+
+00:04:42.504 --> 00:04:45.828
+they expire? Counts have stated totals.
+
+00:04:46.092 --> 00:04:48.325
+Critical conditions stay visible.
+
+00:04:48.715 --> 00:04:53.032
+A serious loss of protection cannot disappear inside an overall percentage.
+
+00:04:53.350 --> 00:04:56.701
+The manager can now make a decision under the plant's procedures
+
+00:04:56.926 --> 00:04:58.845
+with the affected protection in view.
+
+00:04:59.329 --> 00:05:03.082
+The record preserves what was known, what was decided and who
+
+00:05:03.102 --> 00:05:07.718
+accepted responsibility. Over time, recurring inhibits,
+
+00:05:07.827 --> 00:05:11.477
+repeated extensions and failed checks reveal patterns.
+
+00:05:12.053 --> 00:05:16.705
+Those lessons return to engineering, maintenance and the next hazard study,
+
+00:05:17.046 --> 00:05:19.970
+so the operating record becomes a source of improvement.
+
+00:05:20.270 --> 00:05:24.395
+Veriso Barrier brings study intent, changing plant conditions and
+
+00:05:24.415 --> 00:05:27.577
+accountable decisions into one continuous picture.
+
+00:05:28.153 --> 00:05:29.423
+Convert the study.
+
+00:05:29.744 --> 00:05:30.978
+Confirm the model.
+
+00:05:31.299 --> 00:05:32.580
+Connect the records.
+
+00:05:32.844 --> 00:05:33.973
+Check the plant.
+
+00:05:34.295 --> 00:05:35.819
+Run the operating cycle.
+
+00:05:36.083 --> 00:05:37.944
+The operator remains in control.
+
+00:05:38.265 --> 00:05:41.508
+The value is clarity: protection that can be traced from the
+
+00:05:41.528 --> 00:05:44.986
+original hazard to the decision that matters on the next shift.

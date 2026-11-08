@@ -22,13 +22,18 @@
 <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}.hero__sub,.hero__actions,.hero__meta{opacity:1!important;transform:none!important}.w>span{transform:none!important}</style></noscript>
 <link rel="stylesheet" href="../assets/css/site.css">
 <link rel="stylesheet" href="../assets/css/ar.css">
+<link rel="stylesheet" href="../assets/css/video.css">
+<link rel="alternate" hreflang="en" href="https://www.ascenderagroup.sa/">
+<link rel="alternate" hreflang="ar" href="https://www.ascenderagroup.sa/ar/">
+<link rel="alternate" hreflang="x-default" href="https://www.ascenderagroup.sa/">
 </head>
 <body class="ar">
 <span class="progress"></span>
 
 <header class="nav">
   <a class="nav__brand" href="index.html"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M6 40 V28 h7 v12 Z" fill="currentColor" opacity=".38"/><path d="M19.5 40 V19 h7 v21 Z" fill="currentColor" opacity=".64"/><path class="bar-t" d="M33 40 V8 h7 v32 Z" fill="#2bb3bd"/><circle cx="36.5" cy="4" r="2.2" fill="currentColor"/></svg>ASCENDERA<small>المجموعة · الرياض</small></a>
-  <nav class="nav__links">
+  <button class="nav__toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" hidden>القائمة</button>
+  <nav class="nav__links" id="primary-navigation" aria-label="التنقل الرئيسي">
     <a href="advisory/index.html">Advisory</a>
     <a href="veriso/index.html">Veriso</a>
     <a href="kalibra/index.html">Kalibra</a>
@@ -45,8 +50,8 @@
   <div class="hero__noise"></div>
   <div class="hero__inner">
     <p class="eyebrow">مجموعة أسينديرا · الرياض، المملكة العربية السعودية</p>
-    <h1 class="h-display" data-words>ننصح. <em>نتحقق.</em> نثبت.</h1>
-    <p class="hero__sub">مستشارون سبق لهم أن أنجزوا العمل بأنفسهم. تقنية تثبت ذلك. ومركز يدرّب عليه. شركة واحدة، بُنيت في الرياض للعقد الذي تبني فيه المملكة مستقبلها.</p>
+    <h1 class="h-display">ننصح. <em>نتحقق.</em> نثبت.</h1>
+    <p class="hero__sub">ممارسون يقدمون المشورة من واقع خبرتهم. تقنية تتحقق من الأدلة. ومركز يثبت كفاءة الأفراد. شركة واحدة، بُنيت في الرياض للعقد الذي تبني فيه المملكة مستقبلها.</p>
     <div class="hero__actions">
       <a class="btn" href="#disciplines">استكشف المجموعة</a>
       <a class="btn btn--ghost" href="contact.html">تواصل معنا</a>
@@ -58,8 +63,8 @@
 <!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee__track">
-    <span>استشارات الصحة والسلامة والبيئة</span><span>العناية الواجبة البيئية والاجتماعية</span><span>تقنية التوثيق والتحقق</span><span>التحقق الميداني</span><span>التدريب التجريبي</span><span>معايير مؤسسات التمويل التنموي</span><span>خمس قارات</span><span>قيادة من كبار الممارسين</span>
-    <span>استشارات الصحة والسلامة والبيئة</span><span>العناية الواجبة البيئية والاجتماعية</span><span>تقنية التوثيق والتحقق</span><span>التحقق الميداني</span><span>التدريب التجريبي</span><span>معايير مؤسسات التمويل التنموي</span><span>خمس قارات</span><span>قيادة من كبار الممارسين</span>
+    <span>استشارات الصحة والسلامة والبيئة</span><span>العناية الواجبة البيئية والاجتماعية</span><span>تقنية التوثيق والتحقق</span><span>التحقق الميداني</span><span>التدريب العملي بالمحاكاة</span><span>معايير مؤسسات التمويل التنموي</span><span>خمس قارات</span><span>قيادة من كبار الممارسين</span>
+    <span>استشارات الصحة والسلامة والبيئة</span><span>العناية الواجبة البيئية والاجتماعية</span><span>تقنية التوثيق والتحقق</span><span>التحقق الميداني</span><span>التدريب العملي بالمحاكاة</span><span>معايير مؤسسات التمويل التنموي</span><span>خمس قارات</span><span>قيادة من كبار الممارسين</span>
   </div>
 </div>
 
@@ -69,7 +74,7 @@
     <div class="stat" data-reveal><b><span data-count="5"></span></b><span>قارات من الخبرة التشغيلية</span></div>
     <div class="stat" data-reveal><b><span data-count="25" data-suffix="+"></span></b><span>سنة متوسط خبرة كبار الممارسين</span></div>
     <div class="stat" data-reveal><b><span data-count="200" data-suffix="+"></span></b><span>مهمة تحقق وعناية واجبة</span></div>
-    <div class="stat" data-reveal><b><span data-count="40" data-prefix="$" data-suffix="bn+"></span></b><span>رؤوس أموال دُققت وفق معايير مؤسسات التمويل التنموي</span></div>
+    <div class="stat" data-reveal><b><span data-count="40" data-prefix="$" data-suffix="bn+"></span></b><span>استثمارات خضعت للعناية الواجبة وفق معايير مؤسسات التمويل التنموي</span></div>
   </div>
 </section>
 
@@ -168,10 +173,14 @@
   </div>
 </section>
 
+
+<!-- VERISO FILMS -->
+<section class="section section--dim film-section" id="films"><div class="wrap"><div class="section__head"><p class="eyebrow">مكتبة الفيديو</p><h2 class="h-serif">شاهد كيف تربط Veriso الأدلة.</h2><p>مقدمة عملية للتقنية التي تدعم أعمال التحقق في المجموعة.</p></div><div class="film-grid film-grid--single"><a class="film-card" href="veriso/watch/assurance-platform/index.html"><div class="film-card__image"><img src="../assets/video/2026-11/assurance-platform/ar.png" alt="" loading="lazy" width="1920" height="1080"><span class="film-card__play" aria-hidden="true">▶</span><span class="film-card__time" dir="ltr">7:32</span></div><div class="film-card__copy"><h3>منصة فيريسو</h3><p>ربط المتطلبات ونظام الإدارة والواقع الميداني، في دورة متكررة من التعلّم والتحسين والتحقق.</p><strong>شاهد الفيلم</strong></div></a></div><div class="film-links"><a href="veriso/videos/index.html">تصفّح جميع أفلام Veriso</a></div></div></section>
+
 <!-- CTA -->
 <section class="cta-band">
   <p class="eyebrow">ابدأ المحادثة</p>
-  <h2 data-reveal>عناية واجبة، أم توثيق تشغيلي، أم أشخاص يستحقون <span class="accent serif-i">إثبات كفاءتهم؟</span></h2>
+  <h2 data-reveal>عناية واجبة، أم تحقق تشغيلي، أم تدريب يتيح لأفرادك <span class="accent serif-i">إثبات كفاءتهم؟</span></h2>
   <p data-reveal>سواء كنت تحتاج إلى عناية واجبة لاستثمار، أو توثيق لبرنامج إنشائي، أو تدريب يُثبت كفاءة أفرادك، فإن المحادثة الأولى لا تكلف شيئاً.</p>
   <div class="hero__actions" data-reveal>
     <a class="btn" href="contact.html">تواصل معنا</a>

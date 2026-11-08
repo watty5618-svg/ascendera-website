@@ -1,5 +1,45 @@
 /* Ascendera shared behaviour */
 (function () {
+  'use strict';
+  var nav = document.querySelector('.nav');
+  var button = nav && nav.querySelector('.nav__toggle');
+  if (!button) return;
+  var ar = document.documentElement.lang === 'ar';
+  button.hidden = false;
+  nav.classList.add('nav--enhanced');
+  function setOpen(open) {
+    nav.classList.toggle('is-open', open);
+    button.setAttribute('aria-expanded', String(open));
+    button.textContent = ar ? (open ? 'إغلاق القائمة' : 'القائمة') : (open ? 'Close menu' : 'Menu');
+  }
+  button.addEventListener('click', function () { setOpen(button.getAttribute('aria-expanded') !== 'true'); });
+  nav.querySelectorAll('.nav__links a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && button.getAttribute('aria-expanded') === 'true') { setOpen(false); button.focus(); }
+  });
+  document.addEventListener('click', function (e) { if (!nav.contains(e.target)) setOpen(false); });
+  var mobile = window.matchMedia('(max-width:1000px)');
+  mobile.addEventListener('change', function () { setOpen(false); });
+})();
+
+/* Decorative motion can be paused independently of narrated watch pages. */
+(function () {
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  document.querySelectorAll('.hero__video').forEach(function (video) {
+    var ar = document.documentElement.lang === 'ar';
+    var button = document.createElement('button');
+    button.type = 'button'; button.className = 'motion-toggle';
+    function label() { button.textContent = ar ? (video.paused ? 'تشغيل الخلفية المتحركة' : 'إيقاف الخلفية المتحركة') : (video.paused ? 'Play background motion' : 'Pause background motion'); }
+    video.closest('.hero').appendChild(button);
+    button.addEventListener('click', function () { if (video.paused) video.play().catch(label); else video.pause(); });
+    video.addEventListener('play', label); video.addEventListener('pause', label);
+    if (reduced.matches) video.pause();
+    reduced.addEventListener('change', function (e) { if (e.matches) video.pause(); });
+    label();
+  });
+})();
+
+(function () {
   "use strict";
 
   /* Marquee: constant pixel speed on every device.

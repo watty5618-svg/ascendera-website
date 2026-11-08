@@ -1,0 +1,71 @@
+[
+  {
+    "id": "assurance-platform",
+    "editions": {
+      "en": {
+        "title": "VERISO | Assurance Platform",
+        "description": "Connect requirements, the management system and field evidence in a continuous cycle of learning, improvement and verification.",
+        "seconds": 435.32,
+        "movie": "assets/video/2026-11/assurance-platform/en.mp4",
+        "poster": "assets/video/2026-11/assurance-platform/en.jpg",
+        "vtt": "assets/video/2026-11/assurance-platform/en.vtt",
+        "transcript": "assets/video/2026-11/assurance-platform/en.txt"
+      },
+      "ar": {
+        "title": "منصة فيريسو",
+        "description": "ربط المتطلبات ونظام الإدارة والواقع الميداني، في دورة متكررة من التعلّم والتحسين والتحقق.",
+        "seconds": 452.96,
+        "movie": "assets/video/2026-11/assurance-platform/ar.mp4",
+        "poster": "assets/video/2026-11/assurance-platform/ar.png",
+        "vtt": "assets/video/2026-11/assurance-platform/ar.vtt",
+        "transcript": "assets/video/2026-11/assurance-platform/ar.txt"
+      }
+    }
+  },
+  {
+    "id": "process-and-barrier",
+    "editions": {
+      "en": {
+        "title": "VERISO | Process and Barrier",
+        "description": "Connect the intent of the hazard study with operating protection, checks, changes and decisions with clear responsibility.",
+        "seconds": 345.84,
+        "movie": "assets/video/2026-11/process-and-barrier/en.mp4",
+        "poster": "assets/video/2026-11/process-and-barrier/en.jpg",
+        "vtt": "assets/video/2026-11/process-and-barrier/en.vtt",
+        "transcript": "assets/video/2026-11/process-and-barrier/en.txt"
+      },
+      "ar": {
+        "title": "فيريسو: العمليات وحواجز الحماية",
+        "description": "ربط قصد دراسة المخاطر بحالة الحماية التشغيلية والفحوص والتغييرات والقرارات ذات المسؤوليات الواضحة.",
+        "seconds": 368.44,
+        "movie": "assets/video/2026-11/process-and-barrier/ar.mp4",
+        "poster": "assets/video/2026-11/process-and-barrier/ar.png",
+        "vtt": "assets/video/2026-11/process-and-barrier/ar.vtt",
+        "transcript": "assets/video/2026-11/process-and-barrier/ar.txt"
+      }
+    }
+  },
+  {
+    "id": "barrier-report",
+    "editions": {
+      "en": {
+        "title": "VERISO | Barrier Report",
+        "description": "Turn a hazard study into a linked report showing hazards, barriers and the questions requiring engineering review.",
+        "seconds": 123.08,
+        "movie": "assets/video/2026-11/barrier-report/en.mp4",
+        "poster": "assets/video/2026-11/barrier-report/en.jpg",
+        "vtt": "assets/video/2026-11/barrier-report/en.vtt",
+        "transcript": "assets/video/2026-11/barrier-report/en.txt"
+      },
+      "ar": {
+        "title": "فيريسو: تقرير حواجز الحماية",
+        "description": "تحويل دراسة المخاطر إلى تقرير مترابط يوضح الأخطار وحواجز الحماية والمسائل التي تحتاج إلى مراجعة هندسية.",
+        "seconds": 143.68,
+        "movie": "assets/video/2026-11/barrier-report/ar.mp4",
+        "poster": "assets/video/2026-11/barrier-report/ar.png",
+        "vtt": "assets/video/2026-11/barrier-report/ar.vtt",
+        "transcript": "assets/video/2026-11/barrier-report/ar.txt"
+      }
+    }
+  }
+]

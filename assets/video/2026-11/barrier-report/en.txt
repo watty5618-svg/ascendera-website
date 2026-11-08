@@ -1,0 +1,23 @@
+VERISO | Barrier Report
+Running time: 02:03.080
+
+00:00.000 | Make the study usable
+Your hazard study contains the engineering behind the plant's protection. Veriso Barrier Report turns that study into a clear, structured report, showing the hazards, the barriers and the questions your engineers need to review.
+
+00:14.120 | Read the study and retain the source
+Start with your signed HAZOP, spreadsheet or scanned study. The converter reads the content and retains the link to the original document, row and words. Your units, roles and conventions shape the output. Uncertain material is flagged for resolution.
+
+00:31.800 | See the protection in the study
+Hazard screening identifies the major-accident scenarios that need bow ties. Causes, the central event and consequences become a visible structure, with prevention and mitigation barriers on the relevant paths. Other deviations remain in the register, keeping the picture focused.
+
+00:49.120 | A coordinated report pack
+The report brings together five outputs in your own format: bow ties, a barrier register, a candidate list of safety-critical equipment, gaps for engineering review, and HAZOP worksheets. Each connects back to the same model, so the team can move between a diagram, a barrier and its source without rebuilding the picture.
+
+01:10.920 | Engineers review and confirm
+Engineers review the interpretation, confirm proposed criticality and decide which equipment is safety-critical. They can trace the assumptions, resolve questions and sign the resulting snapshot. That gives the plant a coherent study record to discuss, hand over and use as the basis for further engineering work.
+
+01:30.400 | Prepare the next study
+The worksheets also support the next study. For a new plant, reference templates can help prepare a first draft. The study team still examines the hazards and makes the decisions, starting with organised information rather than an empty page.
+
+01:44.960 | The report and the full solution
+Barrier Report gives you the structured study snapshot. The full Process and Barrier solution carries that model into ongoing management of impairments, changes and checks. Two connected offers, with a clear starting point: understand the protection your study describes.
