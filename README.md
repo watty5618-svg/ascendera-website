@@ -10,6 +10,8 @@ The libraries are `veriso/videos/index.html` and `ar/veriso/videos/index.html`. 
 
 The November 2026 editions include Veriso Platform, Process and Barrier, and Barrier Report. Each language has its own MP4, poster, WebVTT captions and transcript. Keep captions and transcript paired with the exact recording. Preserve `preload="none"`, native controls, and no autoplay on narrated films. The MP4 files already place their metadata first for streaming.
 
+The library also includes three practical-use scenarios: Platform, Barrier and Barrier Report, each in English and Arabic. Scenario entries use `kind: scenario` and link to their corresponding explainer through `explainer`. They are illustrative applications, not customer case studies. The six new editions and their paired poster, VTT and transcript files were checked against the completed scenario archive and movie hashes in its production audit. The source records describe them as a completed working-session candidate for release. The practice film is still in production and is not included.
+
 The former Comply URL is retained, with the current Social & Welfare module name displayed. Internal links and existing bookmarks continue to work.
 
 ## Advisory & Delivery practice

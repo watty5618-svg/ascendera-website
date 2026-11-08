@@ -25,5 +25,7 @@
 .film-transcript p{line-height:1.85;margin:1rem 0;color:var(--muted)}
 .film-related{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--line)}
 .film-related h2{margin-bottom:1rem}
+.film-watch[id],.film-section[id]{scroll-margin-top:6rem}
+.film-watch>h2{font-size:clamp(1.6rem,3vw,2.5rem)}
 @media(max-width:900px){.film-grid{grid-template-columns:1fr}.film-grid--single{grid-template-columns:1fr}.film-intro{padding-top:7rem}}
 .ar .film-intro h1,.ar .film-card h3{letter-spacing:0;line-height:1.5}

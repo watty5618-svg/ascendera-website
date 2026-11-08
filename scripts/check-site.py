@@ -87,6 +87,6 @@ for film in catalog:
 tree=ET.parse(root/'sitemap.xml')
 urls=[e.text for e in tree.iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
 assert len(urls)==len(set(urls))==len(pages)-1,'Sitemap mismatch'
-result={'htmlPages':len(pages),'localLinks':links,'bilingualFilms':len(catalog),'videoEditions':6,'sitemapUrls':len(urls),'errors':errors}
+result={'htmlPages':len(pages),'localLinks':links,'bilingualFilms':len(catalog),'videoEditions':sum(len(f['editions']) for f in catalog),'sitemapUrls':len(urls),'errors':errors}
 print(json.dumps(result,ensure_ascii=False,indent=2))
 raise SystemExit(bool(errors))
