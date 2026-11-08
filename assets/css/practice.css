@@ -19,6 +19,13 @@
 .service-card{background:#fffdf9;padding:2rem;border:1px solid var(--line-dark);display:flex;flex-direction:column;align-items:flex-start}
 .service-number{font:500 .8rem var(--font-mono);color:var(--accent-ink);margin-bottom:.9rem}
 .service-card h4{font-size:1.35rem;line-height:1.35;margin-bottom:.6rem}
+.specialist-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.specialist-card h3{font-size:1.4rem;line-height:1.35;margin-bottom:1rem}
+.specialist-card .service-promise{line-height:1.8}
+.specialist-card .service-deliver{margin-top:auto}
+.practice-links{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem}
+.practice-links a{color:var(--accent-ink);text-underline-offset:4px}
+@media(max-width:1000px){.specialist-grid{grid-template-columns:1fr}}
 .service-promise{color:var(--muted-dark);margin-bottom:1.3rem}
 .service-deliver{line-height:1.75}
 .service-deliver strong{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:var(--accent-ink);margin-bottom:.35rem}
