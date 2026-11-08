@@ -85,34 +85,44 @@ for film in catalog:
             assert schema['inLanguage']==lang and schema['@type']=='VideoObject'
         except Exception as ex:errors.append(f'{film["id"]}/{lang}: {ex}')
 practice=json.loads((root/'assets/video/practice.json').read_text(encoding='utf-8'))
-try:
-    length=duration(root/practice['movie'])
-    assert abs(length-practice['seconds'])<.25,'duration mismatch'
-    captions=(root/practice['vtt']).read_text(encoding='utf-8-sig')
-    assert captions.startswith('WEBVTT'),'missing caption header'
-    cues=re.findall(r'(\d{2}:\d{2}:\d{2}\.\d{3}) --> (\d{2}:\d{2}:\d{2}\.\d{3})',captions)
-    assert cues,'missing captions'
-    previous=0
-    for start,end in cues:
-        a,b=seconds(start),seconds(end)
-        assert a>=previous-.05 and b>a and b<=length+.5,'invalid practice caption timing'
-        previous=b
-    assert length-previous<5,'practice captions end too early'
-    assert (root/practice['transcript']).stat().st_size>100,'missing transcript'
-    for prefix in ('','ar/'):
-        page=root/(prefix+'advisory/hsse/index.html')
-        parsed=pages[page]
-        player=next(a for t,a in parsed.tags if t=='video')
-        assert 'controls' in player and 'autoplay' not in player and player.get('preload')=='none'
-        track=next(a for t,a in parsed.tags if t=='track')
-        assert track['srclang']==practice['language']=='en','incorrect practice caption language'
-        schema=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',page.read_text(encoding='utf-8'),re.S).group(1))
-        assert schema['inLanguage']=='en' and schema['@type']=='VideoObject'
-except Exception as ex:errors.append(f'hsse-practice/en: {ex}')
+for film in practice:
+    assert set(film['editions'])=={'en','ar'},'practice film needs both languages'
+    for lang,edition in film['editions'].items():
+        try:
+            length=duration(root/edition['movie'])
+            assert abs(length-edition['seconds'])<.25,'duration mismatch'
+            captions=(root/edition['vtt']).read_text(encoding='utf-8-sig')
+            assert captions.startswith('WEBVTT'),'missing caption header'
+            cues=re.findall(r'(\d{2}:\d{2}:\d{2}\.\d{3}) --> (\d{2}:\d{2}:\d{2}\.\d{3})',captions)
+            assert cues,'missing captions'
+            previous=0
+            for start,end in cues:
+                a,b=seconds(start),seconds(end)
+                assert a>=previous-.05 and b>a and b<=length+.5,'invalid practice caption timing'
+                previous=b
+            assert length-previous<5,'practice captions end too early'
+            transcript=(root/edition['transcript']).read_text(encoding='utf-8-sig').strip()
+            assert len(transcript)>100,'missing transcript'
+            page=root/('ar/' if lang=='ar' else '')/film['page']
+            parsed=pages[page]
+            player=next(a for t,a in parsed.tags if t=='video' and a.get('class')=='film-player')
+            assert 'controls' in player and 'autoplay' not in player and player.get('preload')=='none'
+            track=next(a for t,a in parsed.tags if t=='track')
+            assert track['srclang']==edition['language']==lang,'incorrect practice caption language'
+            assert (page.parent/track['src']).resolve()==(root/edition['vtt']).resolve(),'wrong caption file'
+            assert (page.parent/player['poster']).resolve()==(root/edition['poster']).resolve(),'wrong poster'
+            assert any((page.parent/a.get('src','')).resolve()==(root/edition['movie']).resolve() for t,a in parsed.tags if t=='source'),'wrong video source'
+            schema=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',page.read_text(encoding='utf-8'),re.S).group(1))
+            assert schema['inLanguage']==lang and schema['@type']=='VideoObject'
+            assert schema['contentUrl']=='https://www.ascenderagroup.sa/'+edition['movie']
+            assert abs(float(schema['duration'][2:-1])-length)<.25,'schema duration mismatch'
+            assert schema['transcript']==transcript,'stale transcript in schema'
+            assert schema['uploadDate']==edition['uploadDate'],'publication date mismatch'
+        except Exception as ex:errors.append(f'{film["id"]}/{lang}: {ex}')
 
 tree=ET.parse(root/'sitemap.xml')
 urls=[e.text for e in tree.iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
 assert len(urls)==len(set(urls))==len(pages)-1,'Sitemap mismatch'
-result={'htmlPages':len(pages),'localLinks':links,'bilingualFilms':len(catalog),'practiceEditions':1,'videoEditions':sum(len(f['editions']) for f in catalog)+1,'sitemapUrls':len(urls),'errors':errors}
+result={'htmlPages':len(pages),'localLinks':links,'bilingualFilms':len(catalog),'practiceEditions':sum(len(f['editions']) for f in practice),'videoEditions':sum(len(f['editions']) for f in catalog+practice),'sitemapUrls':len(urls),'errors':errors}
 print(json.dumps(result,ensure_ascii=False,indent=2))
 raise SystemExit(bool(errors))

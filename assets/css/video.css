@@ -46,7 +46,8 @@
 .film-cover h3{font-size:clamp(1.15rem,1.8vw,1.7rem);color:var(--white);max-width:26ch;margin:0;line-height:1.2}
 .film-cover .film-card__play{inset:1rem auto auto 1rem;transform:none;width:2.3rem;height:2.3rem;z-index:3;font-size:.8rem}
 [dir=rtl] .film-cover .film-card__play{left:auto;right:1rem}
-.film-cover .film-card__time{top:1rem;bottom:auto;z-index:3}
+.film-cover .film-card__time{top:1rem;bottom:auto;inset-inline-end:auto;left:auto;right:1rem;z-index:3}
+[dir=rtl] .film-cover .film-card__time{left:1rem;right:auto}
 .film-card:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
 .film-grid--single .film-card{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);align-items:center}
 .film-grid--single{grid-template-columns:minmax(0,1100px)}
@@ -54,3 +55,5 @@
 .film-card__copy p{font-size:.95rem}
 .film-section .section__head{margin-bottom:2.5rem}
 @media(max-width:700px){.film-grid--single .film-card{grid-template-columns:1fr}.film-grid--single .film-card__image{min-height:0}.film-cover h3{font-size:1.3rem}}
+
+@media(max-width:360px){#practice-films .film-cover__label{display:none}}
