@@ -26,6 +26,12 @@ Service enquiries use allowlisted `service=hsse` or `service=hsse-1` through `hs
 
 The practice copy is adapted from the owner's 8 November 2026 draft. Before public release, resolve that draft's managed-service activity-scope question and outstanding certification evidence and product-naming decisions. The new pages make no certification claim; the Advisory hub's unsupported certification wording has been removed. Certification statements elsewhere in the older site have not been reconciled by this change.
 
+## Public delivery summary
+
+The English and Arabic engagement pages describe major infrastructure projects across the Kingdom and Central Asia. Advisory and HSSE practice pages link to the summary and the purpose-written public PDF at `assets/documents/Ascendera-Delivery-in-Practice.pdf` (English, labelled accordingly in Arabic).
+
+Keep client identity, specific countries within Central Asia, asset technologies, project imagery, exact counts, timeframes and financial figures out of this delivery story, including metadata and downloads. Describe the work and handover materials without inferring a complete Veriso deployment or quantified performance results. Further client or project disclosure requires client written consent; an NDA alone does not authorise it. Never add the confidential source document to this repository.
+
 ## Preview and checks
 
 ```text

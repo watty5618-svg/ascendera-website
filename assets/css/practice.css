@@ -53,3 +53,21 @@
 .practice-page a:focus-visible,.practice-page summary:focus-visible{outline:3px solid var(--accent-ink);outline-offset:5px}
 @media(max-width:900px){.practice-routes{grid-template-columns:1fr}.practice-feature{grid-template-columns:1fr}.practice-feature .focus-card__media img{min-height:0;aspect-ratio:16/8}.service-card{padding:1.4rem}}
 @media(max-width:600px){.service-grid,.managed-grid,.practice-extras{grid-template-columns:1fr}.practice-route{padding:1.6rem}.practice-hero{min-height:90svh}.practice-hero .hero__inner{padding-top:8rem}.practice-jumps{gap:.5rem}.practice-jumps a{font-size:.8rem}.independence-note{padding:1.4rem}.brand-advisory .nav__brand{font-size:.77rem}}
+
+/* Public delivery evidence uses no identifiable project imagery. */
+.delivery-hero{min-height:78svh;background:radial-gradient(ellipse at 90% 15%,#15383c 0,transparent 55%),var(--ink)}
+.delivery-hero .hero__inner{padding-block:10rem 6rem}
+.delivery-hero .h-display{max-width:20ch;font-size:clamp(2.5rem,5.8vw,5.6rem)}
+.delivery-hero .hero__sub{max-width:760px}
+.delivery-region{color:var(--accent);font-size:clamp(1rem,2vw,1.35rem);margin-top:1.5rem}
+.delivery-proof .section__head{max-width:1000px}
+.delivery-proof__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-block:1px solid var(--line);gap:2rem;padding:2rem 0}
+.delivery-proof__grid h3{font-size:1.6rem;margin-bottom:.6rem}
+.delivery-proof__grid p{line-height:1.7;color:var(--muted)}
+.delivery-proof__links{display:flex;flex-wrap:wrap;gap:1.5rem;margin-top:2rem}
+.delivery-proof__links a{color:var(--accent);text-underline-offset:5px}
+.section--light .delivery-proof__grid{border-color:var(--line-dark)}
+.section--light .delivery-proof__grid p{color:var(--muted-dark)}
+.section--light .delivery-proof__links a{color:var(--accent-ink)}
+.delivery-privacy{border-inline-start:3px solid var(--accent-ink);padding-inline-start:1.2rem;line-height:1.8;color:var(--muted-dark);max-width:850px}
+@media(max-width:600px){.delivery-proof__grid{grid-template-columns:1fr;gap:1.4rem}.delivery-hero .hero__inner{padding-block:8rem 4rem}.delivery-hero .btn{white-space:normal;text-align:center}.delivery-proof__links{flex-direction:column}}
