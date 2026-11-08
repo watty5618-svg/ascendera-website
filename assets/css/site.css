@@ -317,6 +317,12 @@ html,body{ overflow-x:clip; }
 .brandrow__go i{ font-style:normal; transition:transform .35s var(--ease); }
 .brandrow:hover .brandrow__go{ background:var(--accent); color:var(--ink-deep); border-color:var(--accent); }
 .brandrow:hover .brandrow__go i{ transform:translateX(5px); }
+.brandrow--advisory .brandrow__inner{ padding-top:7rem; }
+.brandrow__name a, a.brandrow__go{ text-decoration:none; }
+.brandrow__actions{ display:flex; flex-direction:column; align-items:flex-start; gap:.6rem; max-width:100%; flex-shrink:0; }
+.brandrow__actions .brandrow__go{ max-width:100%; }
+.brandrow__practice{ font-size:.9rem; color:var(--accent); text-underline-offset:.3em; max-width:36ch; padding:.5rem 0; }
+.brandrow--advisory a:focus-visible{ outline:2px solid var(--accent); outline-offset:6px; }
 @media (max-width:900px){
   .brandrow__inner{ flex-direction:column; align-items:flex-start; gap:1.8rem; }
 }
