@@ -1,4 +1,24 @@
 /* Ascendera shared behaviour */
+/* Open service groups reached from navigation, shared links or browser history. */
+(function () {
+  function revealServiceHash() {
+    var id;
+    try { id = decodeURIComponent(window.location.hash.slice(1)); } catch (_) { return; }
+    var target = id && document.getElementById(id);
+    if (!target) return;
+    var group = target.closest('.service-disclosure');
+    if (!group) return;
+    group.open = true;
+    requestAnimationFrame(function () { target.scrollIntoView({ block: 'start' }); });
+  }
+  window.addEventListener('hashchange', revealServiceHash);
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[href^="#"]');
+    if (link && link.hash === window.location.hash) revealServiceHash();
+  });
+  revealServiceHash();
+})();
+
 (function () {
   'use strict';
   var nav = document.querySelector('.nav');

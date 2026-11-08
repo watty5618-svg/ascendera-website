@@ -36,3 +36,21 @@
 @media(max-width:700px){.practice-film-feature>a{grid-template-columns:1fr;gap:1rem;padding:1rem}}
 @media(max-width:900px){.film-grid{grid-template-columns:1fr}.film-grid--single{grid-template-columns:1fr}.film-intro{padding-top:7rem}}
 .ar .film-intro h1,.ar .film-card h3{letter-spacing:0;line-height:1.5}
+
+/* Readable covers use existing photography; the film and caption assets stay paired. */
+.film-cover{isolation:isolate}
+.film-cover img{object-fit:cover;filter:brightness(.65)}
+.film-cover::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--ink-deep),transparent 90%);z-index:1}
+.film-cover__text{position:absolute;inset-inline:1.4rem;bottom:1.3rem;padding-inline-end:2rem;z-index:2}
+.film-cover__label{display:block;font:500 .65rem var(--font-mono);letter-spacing:.12em;margin-bottom:.7rem;color:var(--white)}
+.film-cover h3{font-size:clamp(1.15rem,1.8vw,1.7rem);color:var(--white);max-width:26ch;margin:0;line-height:1.2}
+.film-cover .film-card__play{inset:1rem auto auto 1rem;transform:none;width:2.3rem;height:2.3rem;z-index:3;font-size:.8rem}
+[dir=rtl] .film-cover .film-card__play{left:auto;right:1rem}
+.film-cover .film-card__time{top:1rem;bottom:auto;z-index:3}
+.film-card:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+.film-grid--single .film-card{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);align-items:center}
+.film-grid--single{grid-template-columns:minmax(0,1100px)}
+.film-grid--single .film-card__image{min-height:250px;height:100%}
+.film-card__copy p{font-size:.95rem}
+.film-section .section__head{margin-bottom:2.5rem}
+@media(max-width:700px){.film-grid--single .film-card{grid-template-columns:1fr}.film-grid--single .film-card__image{min-height:0}.film-cover h3{font-size:1.3rem}}

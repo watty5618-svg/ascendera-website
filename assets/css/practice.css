@@ -71,3 +71,51 @@
 .section--light .delivery-proof__links a{color:var(--accent-ink)}
 .delivery-privacy{border-inline-start:3px solid var(--accent-ink);padding-inline-start:1.2rem;line-height:1.8;color:var(--muted-dark);max-width:850px}
 @media(max-width:600px){.delivery-proof__grid{grid-template-columns:1fr;gap:1.4rem}.delivery-hero .hero__inner{padding-block:8rem 4rem}.delivery-hero .btn{white-space:normal;text-align:center}.delivery-proof__links{flex-direction:column}}
+
+/* A shorter reading route, using the existing type, colour and spacing system. */
+.practice-page .section{padding-block:clamp(3.5rem,7vh,6rem)}
+.practice-page .section__head{margin-bottom:2.5rem}
+.practice-film__layout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:3rem;align-items:center}
+.practice-film__layout .h-serif{font-size:clamp(2.2rem,3.5vw,3.6rem)}
+.practice-film__layout .section__head{margin:0}
+.practice-film .film-transcript{margin-top:1.5rem}
+.practice-film .film-note{font-size:.88rem;line-height:1.6}
+.practice-film .film-links{font-size:.88rem;margin-top:1rem}
+.service-disclosure{margin:0;border-top:1px solid var(--line-dark);scroll-margin-top:100px}
+.service-disclosure:last-child{border-bottom:1px solid var(--line-dark)}
+.service-disclosure>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr 1fr auto;align-items:center;gap:2rem;padding:1.6rem 0}
+.service-disclosure>summary::-webkit-details-marker{display:none}
+.service-disclosure>summary h3{font-size:clamp(1.3rem,2.3vw,1.8rem);margin:0;line-height:1.3}
+.service-group__intro{color:var(--muted-dark);line-height:1.6}
+.service-group__toggle{font-size:1.8rem;color:var(--accent-ink);transition:transform .2s}
+.service-disclosure[open]>summary .service-group__toggle{transform:rotate(45deg)}
+.service-disclosure .service-grid{display:block;padding:0 0 1.5rem}
+.service-row{display:grid;grid-template-columns:2rem minmax(0,1fr) minmax(0,1.2fr);gap:.6rem 1.5rem;padding:1.5rem 0;background:transparent;border:0;border-top:1px solid var(--line-dark)}
+.service-row .service-number{grid-column:1;grid-row:1/4;margin:.3rem 0}
+.service-row h4{grid-column:2;grid-row:1;font-size:1.15rem}
+.service-row .service-promise{grid-column:2;grid-row:2;margin:0;line-height:1.65}
+.service-row .service-deliver{grid-column:3;grid-row:1/3}
+.service-row details{grid-column:3;margin:.3rem 0 0;padding:.5rem 0 0}
+.service-row .service-tags{grid-column:3;margin:.2rem 0}
+.service-row .service-enquiry{grid-column:3;margin:.2rem 0}
+.specialist-list{border-top:1px solid var(--line-dark)}
+.specialist-row{display:grid;grid-template-columns:1fr 1.2fr;gap:3rem;padding:2rem 0;border-bottom:1px solid var(--line-dark)}
+.specialist-row h3{font-size:clamp(1.4rem,2.5vw,1.9rem);line-height:1.3}
+.specialist-row__title h3{margin-bottom:1rem}
+.specialist-row .service-promise{line-height:1.75;margin-bottom:1rem}
+.specialist-row .service-deliver{margin-bottom:1rem}
+.specialist-row .service-enquiry{display:inline-block;margin-inline-end:1.5rem}
+.practice-page #delivery .step{padding:1.6rem 0;gap:1.5rem;grid-template-columns:3rem 1fr 1.2fr}
+.practice-page #delivery .step h3{font-size:1.4rem}
+.practice-page .independence-note{margin-top:2rem;padding:1.5rem}
+.practice-additional{border-top:1px solid var(--line-dark);margin-top:2rem;padding-top:1.2rem}
+.practice-additional>summary{cursor:pointer;font-weight:700;font-size:1.1rem;padding:.5rem 0}
+.practice-video-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem;border-block:1px solid var(--line);padding:1.7rem 0}
+.practice-video-link{text-decoration:none}
+.practice-video-link .film-card__copy{padding:0}
+.practice-video-link h3{font-size:1.2rem;margin-bottom:.7rem}
+.practice-video-link p{color:var(--muted);line-height:1.7;margin-bottom:1rem}
+.practice-video-link strong{color:var(--accent);font-size:.9rem}
+@media(max-width:900px){.practice-film__layout{grid-template-columns:1fr;gap:1.6rem}.specialist-row{grid-template-columns:1fr;gap:1rem}.practice-video-links{grid-template-columns:1fr;gap:1.5rem}}
+@media(max-width:600px){.service-disclosure>summary{grid-template-columns:1fr auto;gap:.5rem 1rem}.service-group__intro{grid-column:1;grid-row:2}.service-group__toggle{grid-column:2;grid-row:1/3}.service-row{display:block;padding:1.3rem 0}.service-row .service-number{display:block}.service-row .service-promise{margin-bottom:1rem}.service-row .service-enquiry{display:inline-block}.practice-page #delivery .step{grid-template-columns:1fr;gap:.7rem}.practice-page .practice-jumps{margin:0 0 1.5rem}}
+@media(prefers-reduced-motion:reduce){.service-group__toggle{transition:none}}
