@@ -1,10 +1,86 @@
-{
-  "title": "Ascendera HSSE & Critical Risk: Build it. Run it. Prove it.",
-  "description": "Explore how Ascendera establishes, manages and verifies the HSSE function, with practical deliverables, field evidence and planned handover.",
-  "seconds": 199.967,
-  "language": "en",
-  "movie": "assets/video/2026-11/hsse-practice/en.mp4",
-  "poster": "assets/video/2026-11/hsse-practice/en.jpg",
-  "vtt": "assets/video/2026-11/hsse-practice/en.vtt",
-  "transcript": "assets/video/2026-11/hsse-practice/en.txt"
-}
+[
+  {
+    "id": "hsse-practice-v2",
+    "page": "advisory/hsse/index.html",
+    "editions": {
+      "en": {
+        "title": "HSSE & Critical Risk",
+        "description": "How we establish, run and verify the HSSE function, including hazardous energy isolation, stored-energy control and wider critical risks.",
+        "seconds": 261.133,
+        "language": "en",
+        "uploadDate": "2026-11-08T19:28:13Z",
+        "movie": "assets/video/2026-11/hsse-practice-v2/en.mp4",
+        "poster": "assets/video/2026-11/hsse-practice-v2/en.jpg",
+        "vtt": "assets/video/2026-11/hsse-practice-v2/en.vtt",
+        "transcript": "assets/video/2026-11/hsse-practice-v2/en.txt"
+      },
+      "ar": {
+        "title": "الصحة والسلامة والأمن والبيئة والمخاطر الحرجة",
+        "description": "كيف نؤسس وظيفة الصحة والسلامة والأمن والبيئة ونديرها ونتحقق من أدائها، بما يشمل عزل مصادر الطاقة والتحكم في الطاقة المخزنة والمخاطر الحرجة الأخرى.",
+        "seconds": 278.533,
+        "language": "ar",
+        "uploadDate": "2026-11-08T19:28:13Z",
+        "movie": "assets/video/2026-11/hsse-practice-v2/ar.mp4",
+        "poster": "assets/video/2026-11/hsse-practice-v2/ar.jpg",
+        "vtt": "assets/video/2026-11/hsse-practice-v2/ar.vtt",
+        "transcript": "assets/video/2026-11/hsse-practice-v2/ar.txt"
+      }
+    }
+  },
+  {
+    "id": "hpo-practice",
+    "page": "advisory/hpo/index.html",
+    "editions": {
+      "en": {
+        "title": "High Performance & Critical Thinking",
+        "description": "Meet Dr Dan Cooper and see how we develop judgement, critical thinking and team performance through realistic scenarios, assessment and practical transfer into work.",
+        "seconds": 186.033,
+        "language": "en",
+        "uploadDate": "2026-11-08T19:28:13Z",
+        "movie": "assets/video/2026-11/hpo-practice/en.mp4",
+        "poster": "assets/video/2026-11/hpo-practice/en.jpg",
+        "vtt": "assets/video/2026-11/hpo-practice/en.vtt",
+        "transcript": "assets/video/2026-11/hpo-practice/en.txt"
+      },
+      "ar": {
+        "title": "الأداء العالي والتفكير النقدي",
+        "description": "تعرّف على الدكتور دان كوبر وكيف نطور جودة الحكم والتفكير النقدي وأداء الفرق من خلال سيناريوهات واقعية وتقييم القدرات ونقل التعلم إلى العمل.",
+        "seconds": 187.667,
+        "language": "ar",
+        "uploadDate": "2026-11-08T19:28:13Z",
+        "movie": "assets/video/2026-11/hpo-practice/ar.mp4",
+        "poster": "assets/video/2026-11/hpo-practice/ar.jpg",
+        "vtt": "assets/video/2026-11/hpo-practice/ar.vtt",
+        "transcript": "assets/video/2026-11/hpo-practice/ar.txt"
+      }
+    }
+  },
+  {
+    "id": "ohtl-practice-v2",
+    "page": "advisory/ohtl/index.html",
+    "editions": {
+      "en": {
+        "title": "Overhead Transmission Line Practice",
+        "description": "Meet Lee Stevenson and explore practical transmission support: construction methods, crew competence, work documentation and delivery in the Kingdom and overseas emerging markets.",
+        "seconds": 223.433,
+        "language": "en",
+        "uploadDate": "2026-11-08T19:28:13Z",
+        "movie": "assets/video/2026-11/ohtl-practice-v2/en.mp4",
+        "poster": "assets/video/2026-11/ohtl-practice-v2/en.jpg",
+        "vtt": "assets/video/2026-11/ohtl-practice-v2/en.vtt",
+        "transcript": "assets/video/2026-11/ohtl-practice-v2/en.txt"
+      },
+      "ar": {
+        "title": "ممارسة خطوط النقل الهوائية",
+        "description": "تعرّف على لي ستيفنسون وخدمات دعم مشاريع خطوط النقل: أساليب الإنشاء وكفاءة الفرق ووثائق العمل والتنفيذ في المملكة والأسواق الناشئة خارجها.",
+        "seconds": 219.2,
+        "language": "ar",
+        "uploadDate": "2026-11-08T19:28:13Z",
+        "movie": "assets/video/2026-11/ohtl-practice-v2/ar.mp4",
+        "poster": "assets/video/2026-11/ohtl-practice-v2/ar.jpg",
+        "vtt": "assets/video/2026-11/ohtl-practice-v2/ar.vtt",
+        "transcript": "assets/video/2026-11/ohtl-practice-v2/ar.txt"
+      }
+    }
+  }
+]

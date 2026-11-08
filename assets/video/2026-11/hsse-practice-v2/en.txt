@@ -4,7 +4,11 @@ When a programme starts, we establish its policy, governance, organisation, comp
 
 Where you need us to run the function, we provide accountable leadership and specialist practitioners under an agreed managed-service scope. Your board sets the direction. We manage the programme, contractor controls, assurance and reporting, with a handover plan from day one.
 
-We focus on the risks that can cause the greatest harm: work at height, lifting, moving plant, confined spaces and excavation. Our practitioners define the controls and examine whether they are present and working. You receive a critical risk register and a verification regime.
+We focus on the risks that can cause the greatest harm: work at height, lifting operations, plant and pedestrian interfaces, confined spaces, excavation, and hazardous energy. Energy isolation and control of stored or residual energy are a core part of that work, including electrical charge, hydraulic and pneumatic pressure, mechanical tension and raised equipment. Our practitioners define the critical controls and verify that they are present and effective. You receive a critical risk register and a verification regime matched to the work.
+
+Switching off a supply does not remove every hazard. Stored pressure, electrical charge, mechanical tension, gravity and residual heat may remain. Effective control identifies every energy source, isolates and secures it, releases or restrains stored energy, and verifies the safe state before work begins. Where energy can reaccumulate, verification continues. The controls follow an equipment-specific isolation procedure.
+
+Critical-risk scope also covers dropped objects and line-of-fire exposure, electrical work, pressure testing, hot work, fire and explosion, and the stability of temporary works. The controls and verification are matched to the actual activity.
 
 For process safety, we facilitate hazard identification and HAZOP studies, connect hazards to barriers, and define safety-critical elements and performance standards. We support human-factors reviews and commissioning assurance. The result is a barrier register with owners, requirements and verification dates.
 
