@@ -1,0 +1,146 @@
+[
+  {
+    "id": "assurance-platform",
+    "editions": {
+      "en": {
+        "title": "Veriso Platform",
+        "description": "Veriso Platform reads your policies, procedures and operational records, compares them with applicable requirements and field evidence, and identifies gaps. It helps teams prioritise actions, draft improvements and role-specific training, assign responsible owners, and check whether the changes work in practice.",
+        "seconds": 435.32,
+        "movie": "assets/video/2026-11/assurance-platform/en.mp4",
+        "poster": "assets/video/2026-11/assurance-platform/en.jpg",
+        "vtt": "assets/video/2026-11/assurance-platform/en.vtt",
+        "transcript": "assets/video/2026-11/assurance-platform/en.txt"
+      },
+      "ar": {
+        "title": "منصة فيريسو",
+        "description": "تقرأ منصة فيريسو سياسات مؤسستك وإجراءاتها وسجلاتها التشغيلية، وتقارنها بالمتطلبات المنطبقة والأدلة الميدانية لتحديد الفجوات. وتساعد الفرق على ترتيب أولويات العمل، وإعداد التحسينات والتدريب المخصص لكل دور، وتحديد المسؤوليات، والتحقق من فاعلية التغييرات في الممارسة.",
+        "seconds": 452.96,
+        "movie": "assets/video/2026-11/assurance-platform/ar.mp4",
+        "poster": "assets/video/2026-11/assurance-platform/ar.png",
+        "vtt": "assets/video/2026-11/assurance-platform/ar.vtt",
+        "transcript": "assets/video/2026-11/assurance-platform/ar.txt"
+      }
+    }
+  },
+  {
+    "id": "process-and-barrier",
+    "editions": {
+      "en": {
+        "title": "VERISO | Process and Barrier",
+        "description": "Connect the intent of the hazard study with operating protection, checks, changes and decisions with clear responsibility.",
+        "seconds": 345.84,
+        "movie": "assets/video/2026-11/process-and-barrier/en.mp4",
+        "poster": "assets/video/2026-11/process-and-barrier/en.jpg",
+        "vtt": "assets/video/2026-11/process-and-barrier/en.vtt",
+        "transcript": "assets/video/2026-11/process-and-barrier/en.txt"
+      },
+      "ar": {
+        "title": "فيريسو: العمليات وحواجز الحماية",
+        "description": "ربط قصد دراسة المخاطر بحالة الحماية التشغيلية والفحوص والتغييرات والقرارات ذات المسؤوليات الواضحة.",
+        "seconds": 368.44,
+        "movie": "assets/video/2026-11/process-and-barrier/ar.mp4",
+        "poster": "assets/video/2026-11/process-and-barrier/ar.png",
+        "vtt": "assets/video/2026-11/process-and-barrier/ar.vtt",
+        "transcript": "assets/video/2026-11/process-and-barrier/ar.txt"
+      }
+    }
+  },
+  {
+    "id": "barrier-report",
+    "editions": {
+      "en": {
+        "title": "VERISO | Barrier Report",
+        "description": "Turn a hazard study into a linked report showing hazards, barriers and the questions requiring engineering review.",
+        "seconds": 123.08,
+        "movie": "assets/video/2026-11/barrier-report/en.mp4",
+        "poster": "assets/video/2026-11/barrier-report/en.jpg",
+        "vtt": "assets/video/2026-11/barrier-report/en.vtt",
+        "transcript": "assets/video/2026-11/barrier-report/en.txt"
+      },
+      "ar": {
+        "title": "فيريسو: تقرير حواجز الحماية",
+        "description": "تحويل دراسة المخاطر إلى تقرير مترابط يوضح الأخطار وحواجز الحماية والمسائل التي تحتاج إلى مراجعة هندسية.",
+        "seconds": 143.68,
+        "movie": "assets/video/2026-11/barrier-report/ar.mp4",
+        "poster": "assets/video/2026-11/barrier-report/ar.png",
+        "vtt": "assets/video/2026-11/barrier-report/ar.vtt",
+        "transcript": "assets/video/2026-11/barrier-report/ar.txt"
+      }
+    }
+  },
+  {
+    "id": "platform-scenarios",
+    "kind": "scenario",
+    "explainer": "assurance-platform",
+    "editions": {
+      "en": {
+        "title": "Veriso Platform in practice",
+        "description": "From contractor selection and mobilisation to field controls, welfare and management-system improvement. See how selected modules support different decisions.",
+        "seconds": 146.0,
+        "movie": "assets/video/2026-11/platform-scenarios/en.mp4",
+        "poster": "assets/video/2026-11/platform-scenarios/en.jpg",
+        "vtt": "assets/video/2026-11/platform-scenarios/en.vtt",
+        "transcript": "assets/video/2026-11/platform-scenarios/en.txt"
+      },
+      "ar": {
+        "title": "منصة فيريسو في الممارسة",
+        "description": "من اختيار المقاولين وجاهزية بدء العمل إلى الضوابط الميدانية ورفاه العاملين وتحسين نظم الإدارة. شاهد كيف تدعم الوحدات المختارة قرارات مختلفة.",
+        "seconds": 147.533,
+        "movie": "assets/video/2026-11/platform-scenarios/ar.mp4",
+        "poster": "assets/video/2026-11/platform-scenarios/ar.jpg",
+        "vtt": "assets/video/2026-11/platform-scenarios/ar.vtt",
+        "transcript": "assets/video/2026-11/platform-scenarios/ar.txt"
+      }
+    }
+  },
+  {
+    "id": "barrier-scenarios",
+    "kind": "scenario",
+    "explainer": "process-and-barrier",
+    "editions": {
+      "en": {
+        "title": "Veriso Barrier in practice",
+        "description": "Follow a start-up scenario through shared dependencies, impairments and operating decisions, then explore fleet, insurance and lender reviews.",
+        "seconds": 137.7,
+        "movie": "assets/video/2026-11/barrier-scenarios/en.mp4",
+        "poster": "assets/video/2026-11/barrier-scenarios/en.jpg",
+        "vtt": "assets/video/2026-11/barrier-scenarios/en.vtt",
+        "transcript": "assets/video/2026-11/barrier-scenarios/en.txt"
+      },
+      "ar": {
+        "title": "حواجز فيريسو في الممارسة",
+        "description": "تابع سيناريو بدء التشغيل والاعتماديات المشتركة وأوجه القصور والقرارات التشغيلية، ثم استكشف مراجعات محفظة الأصول والتأمين والمقرضين.",
+        "seconds": 147.167,
+        "movie": "assets/video/2026-11/barrier-scenarios/ar.mp4",
+        "poster": "assets/video/2026-11/barrier-scenarios/ar.jpg",
+        "vtt": "assets/video/2026-11/barrier-scenarios/ar.vtt",
+        "transcript": "assets/video/2026-11/barrier-scenarios/ar.txt"
+      }
+    }
+  },
+  {
+    "id": "report-scenarios",
+    "kind": "scenario",
+    "explainer": "barrier-report",
+    "editions": {
+      "en": {
+        "title": "Barrier Report in practice",
+        "description": "Compare contractor studies, review submissions and identify recurring gaps across an estate. Structured evidence supports the responsible engineers’ decisions.",
+        "seconds": 140.433,
+        "movie": "assets/video/2026-11/report-scenarios/en.mp4",
+        "poster": "assets/video/2026-11/report-scenarios/en.jpg",
+        "vtt": "assets/video/2026-11/report-scenarios/en.vtt",
+        "transcript": "assets/video/2026-11/report-scenarios/en.txt"
+      },
+      "ar": {
+        "title": "تقرير حواجز الحماية في الممارسة",
+        "description": "قارن دراسات المقاولين وراجع المستندات المقدمة وحدد الفجوات المتكررة عبر محفظة الأصول. تدعم الأدلة المنظمة قرارات المهندسين المسؤولين.",
+        "seconds": 154.7,
+        "movie": "assets/video/2026-11/report-scenarios/ar.mp4",
+        "poster": "assets/video/2026-11/report-scenarios/ar.jpg",
+        "vtt": "assets/video/2026-11/report-scenarios/ar.vtt",
+        "transcript": "assets/video/2026-11/report-scenarios/ar.txt"
+      }
+    }
+  }
+]

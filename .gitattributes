@@ -1,0 +1,2 @@
+# Preserve downloadable PDFs byte-for-byte on every checkout.
+*.pdf binary

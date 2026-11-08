@@ -22,14 +22,18 @@
 <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}.hero__sub,.hero__actions,.hero__meta{opacity:1!important;transform:none!important}.w>span{transform:none!important}</style></noscript>
 <link rel="stylesheet" href="../assets/css/site.css">
 <link rel="stylesheet" href="../assets/css/ar.css">
+<link rel="alternate" hreflang="en" href="https://www.ascenderagroup.sa/contact.html">
+<link rel="alternate" hreflang="ar" href="https://www.ascenderagroup.sa/ar/contact.html">
+<link rel="alternate" hreflang="x-default" href="https://www.ascenderagroup.sa/contact.html">
 </head>
 <body class="ar">
 <span class="progress"></span>
 
 <header class="nav">
   <a class="nav__brand" href="index.html"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M6 40 V28 h7 v12 Z" fill="currentColor" opacity=".38"/><path d="M19.5 40 V19 h7 v21 Z" fill="currentColor" opacity=".64"/><path class="bar-t" d="M33 40 V8 h7 v32 Z" fill="#2bb3bd"/><circle cx="36.5" cy="4" r="2.2" fill="currentColor"/></svg>ASCENDERA<small>المجموعة · الرياض</small></a>
-  <nav class="nav__links">
-    <a href="advisory/index.html">Advisory</a>
+  <button class="nav__toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" hidden>القائمة</button>
+  <nav class="nav__links" id="primary-navigation" aria-label="التنقل الرئيسي"><a class="nav__home" href="index.html">المجموعة</a>
+    <a href="advisory/index.html">الاستشارات والتنفيذ</a>
     <a href="veriso/index.html">Veriso</a>
     <a href="kalibra/index.html">Kalibra</a>
     <a href="leadership/index.html">القيادة</a>
@@ -42,7 +46,7 @@
   <div class="hero__noise"></div>
   <div class="hero__inner">
     <p class="eyebrow">تواصل معنا</p>
-    <h1 class="h-display" data-words>ابدأ <em>المحادثة.</em></h1>
+    <h1 class="h-display">ابدأ <em>المحادثة.</em></h1>
     <p class="hero__sub">أخبرنا في بضعة أسطر. سيرد عليك كبار الممارسين المعنيين خلال يومي عمل، دون فريق مبيعات في المنتصف.</p>
   </div>
 </section>
@@ -52,7 +56,7 @@
     <div id="form-sent" hidden style="border:1px solid var(--line); padding:2.6rem 2.4rem; margin-bottom:2.4rem;">
       <p class="eyebrow">تم الإرسال</p>
       <h2 class="h-serif" style="margin:.6rem 0 .8rem;">شكراً لك. <em>رسالتك لدينا.</em></h2>
-      <p style="color:var(--muted); max-width:52ch;">وصل استفسارك مباشرة إلى الفريق الأول. سيرد عليك الأشخاص المعنيون خلال يومي عمل.</p>
+      <p style="color:var(--muted); max-width:52ch;">وصل استفسارك مباشرة إلى فريق كبار الممارسين. سيرد عليك الأشخاص المعنيون خلال يومي عمل.</p>
     </div>
     <form class="form" data-reveal action="https://formsubmit.co/a0a4a2997d7365223ed5881c1c57f1f1" method="POST">
       <input type="hidden" name="_subject" value="Ascendera website (AR): new enquiry">
@@ -71,19 +75,20 @@
       <input id="f-email" name="email" type="email" autocomplete="email" required>
 
       <label for="f-need">ما الذي تحتاجه؟</label>
+      <input type="hidden" id="service-detail" name="service_detail" value="">
       <select id="f-need" name="topic" required>
         <option value="" selected disabled>اختر واحداً</option>
-        <option>Advisory: العناية الواجبة أو الصحة والسلامة والبيئة</option>
-        <option>Veriso: تقنية التوثيق والتحقق</option>
+        <option>الاستشارات والتنفيذ: احتياجات أخرى</option>
+        <option>منصة فيريسو</option>
         <option>Kalibra: المركز التطبيقي</option>
         <option>أمر آخر</option>
-      </select>
+      <option value="hsse">الصحة والسلامة والأمن والبيئة: ناقش احتياجاتك</option><option value="hsse-1">تأسيس وظيفة الصحة والسلامة والأمن والبيئة</option><option value="hsse-2">تصميم الفريق وتأسيسه</option><option value="hsse-3">حوكمة مجلس الإدارة والتقارير</option><option value="hsse-4">الميزانية ونموذج التشغيل</option><option value="hsse-5">نظام الإدارة والمعايير</option><option value="hsse-6">إدارة المخاطر الحرجة</option><option value="hsse-7">سلامة العمليات وإدارة الحواجز</option><option value="hsse-8">التأهيل المسبق للمقاولين واختيارهم</option><option value="hsse-9">جاهزية التعبئة وبدء العمل</option><option value="hsse-10">تقييم أداء السلامة</option><option value="hsse-11">برامج النضج وتحسين الأداء</option><option value="hsse-12">التحقق المستقل</option><option value="hsse-13">التحقيق في الحوادث والتعلم</option><option value="hsse-14">إدارة وظيفة الصحة والسلامة والأمن والبيئة</option><option value="hpo">الأداء العالي والقيادة والفرق</option><option value="critical-thinking">التفكير النقدي واتخاذ القرار</option><option value="ultra-high-risk">الأعمال فائقة الخطورة وخطوط النقل</option></select>
 
       <label for="f-msg">الموقف في بضعة أسطر</label>
       <textarea id="f-msg" name="message"></textarea>
 
       <button class="btn" type="submit">إرسال</button>
-      <p class="form__note">مباشرة إلى الفريق الأول: يرد عليك الأشخاص المعنيون خلال يومي عمل.</p>
+      <p class="form__note">مباشرة إلى فريق كبار الممارسين: يرد عليك الأشخاص المعنيون خلال يومي عمل.</p>
     </form>
   </div>
 </section>
@@ -91,7 +96,7 @@
 <footer class="footer">
   <div class="footer__brand"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M6 40 V28 h7 v12 Z" fill="currentColor" opacity=".38"/><path d="M19.5 40 V19 h7 v21 Z" fill="currentColor" opacity=".64"/><path class="bar-t" d="M33 40 V8 h7 v32 Z" fill="#2bb3bd"/><circle cx="36.5" cy="4" r="2.2" fill="currentColor"/></svg>ASCENDERA<small>ننصح · نتحقق · نثبت · الرياض، السعودية</small></div>
   <nav>
-    <a href="advisory/index.html">Advisory</a>
+    <a href="advisory/index.html">الاستشارات والتنفيذ</a>
     <a href="veriso/index.html">Veriso</a>
     <a href="kalibra/index.html">Kalibra</a>
     <a href="leadership/index.html">القيادة</a>

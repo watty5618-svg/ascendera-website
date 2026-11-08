@@ -112,3 +112,14 @@ body.film-armed.film-ended #p-ar-veriso-barrier .hero .hero__meta{ transition:op
   transition:border-color .25s, color .25s;
 }
 .nav__links a.lang-toggle:hover{ border-color:var(--accent); color:var(--accent); }
+
+/* Comfortable shaping and logical alignment across Arabic product pages. */
+.ar .h-display{line-height:1.32}
+.ar .hero__sub,.ar .section__head p,.ar .spec,.ar .step p{line-height:1.85}
+.ar .product__mono{text-align:start;letter-spacing:0}
+.ar .refusal:nth-child(odd){border-right:0;border-left:1px solid var(--line)}
+.ar .nav__brand{letter-spacing:0}
+.ar .demo-frame__bar b{margin-left:0;margin-right:.7rem}
+.ar .nav__group{letter-spacing:0}
+.ar .hero__actions .btn{white-space:normal;text-align:center}
+@media(max-width:900px){.ar .refusal:nth-child(odd){border-left:0}}

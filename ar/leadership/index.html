@@ -22,6 +22,9 @@
 <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}.hero__sub,.hero__actions,.hero__meta{opacity:1!important;transform:none!important}.w>span{transform:none!important}</style></noscript>
 <link rel="stylesheet" href="../../assets/css/site.css">
 <link rel="stylesheet" href="../../assets/css/ar.css">
+<link rel="alternate" hreflang="en" href="https://www.ascenderagroup.sa/leadership/">
+<link rel="alternate" hreflang="ar" href="https://www.ascenderagroup.sa/ar/leadership/">
+<link rel="alternate" hreflang="x-default" href="https://www.ascenderagroup.sa/leadership/">
 </head>
 <body class="ar">
 <span class="progress"></span>
@@ -29,7 +32,8 @@
 <header class="nav">
   <a class="nav__group" href="../index.html"><span class="arr">←</span> مجموعة أسينديرا</a>
   <a class="nav__brand" href="index.html"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M6 40 V28 h7 v12 Z" fill="currentColor" opacity=".38"/><path d="M19.5 40 V19 h7 v21 Z" fill="currentColor" opacity=".64"/><path class="bar-t" d="M33 40 V8 h7 v32 Z" fill="#2bb3bd"/><circle cx="36.5" cy="4" r="2.2" fill="currentColor"/></svg>LEADERSHIP<small>مجموعة أسينديرا</small></a>
-  <nav class="nav__links">
+  <button class="nav__toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" hidden>القائمة</button>
+  <nav class="nav__links" id="primary-navigation" aria-label="التنقل الرئيسي"><a class="nav__home" href="../index.html">المجموعة</a>
     <a href="#principals">الشركاء الرئيسون</a>
     <a href="#how-we-lead">كيف نقود</a>
     <a class="cta" href="../contact.html">تواصل معنا</a>
@@ -44,8 +48,8 @@
   <div class="hero__noise"></div>
   <div class="hero__inner">
     <p class="eyebrow">مجموعة أسينديرا · القيادة</p>
-    <h1 class="h-display" data-words>الأشخاص الذين يقفون وراء هذا <em>المعيار.</em></h1>
-    <p class="hero__sub">كبار المشغلين والمهندسين ومتخصصي التوثيق من ذوي الخبرة.كل قائد في فريقنا سبق أن قاد هذا النوع من العمل بنفسه، في المواقع والمنشآت وقاعات مجالس الإدارة عبر خمس قارات.</p>
+    <h1 class="h-display">الأشخاص الذين يقفون وراء هذا <em>المعيار.</em></h1>
+    <p class="hero__sub">كبار المشغلين والمهندسين ومتخصصي التوثيق من ذوي الخبرة. كل قائد في فريقنا سبق أن قاد هذا النوع من العمل بنفسه، في المواقع والمنشآت وقاعات مجالس الإدارة عبر خمس قارات.</p>
     <div class="hero__actions">
       <a class="btn" href="#principals">تعرّف على الشركاء الرئيسين</a>
       <a class="btn btn--ghost" href="../contact.html">تواصل معنا</a>
@@ -106,7 +110,7 @@
     <div class="section__head">
       <p class="eyebrow" data-reveal>الشراكات واستشارات مجلس الإدارة</p>
       <h2 class="h-serif" data-reveal>متخصصون محددون بالاسم، <em>حصرياً</em> لأسينديرا.</h2>
-      <p data-reveal>قادة ممارسات نستعين بهم بموجب ترتيبات شراكة حصرية ومتخصصة، إضافةً إلى المستشار الذي يقود التوجه التقني لدينا.</p>
+      <p data-reveal>قادة ممارسات نستعين بهم بموجب ترتيبات شراكة حصرية ومتخصصة، إضافةً إلى شريكنا المؤسس ومستشار مجلس الإدارة في الشؤون التقنية.</p>
     </div>
     <div class="people" data-reveal>
       <div class="person">
@@ -130,9 +134,9 @@
       <div class="person">
         <img class="person__photo" src="../../assets/img/person-simon.jpg" alt="Simon Watson">
         <div>
-          <small>مستشار مجلس الإدارة · التقنية والخدمات المتخصصة</small>
+          <small>شريك مؤسس ومستشار مجلس الإدارة · التقنية والخدمات المتخصصة</small>
           <h3>Simon <em>Watson</em></h3>
-          <p>خمس وعشرون سنة في قيادة السلامة، وآخرها رئيس الصحة والسلامة والأمن والبيئة في أكوا باور، مع أدوار قيادية في Wood Group وSiemens قبل ذلك. شكّل Simon الفكر الأصلي الذي خلف Veriso ويقدم المشورة لمجلس إدارتنا في التقنية.</p>
+          <p>خمس وعشرون سنة في قيادة السلامة، وآخرها رئيس الصحة والسلامة والأمن والبيئة في أكوا باور، مع أدوار قيادية في Wood Group وSiemens قبل ذلك. وضع Simon التصور الأصلي الذي قامت عليه Veriso ويقدم المشورة لمجلس إدارتنا في التقنية.</p>
         </div>
       </div>
     </div>
@@ -154,8 +158,8 @@
       </div>
       <div class="principle" data-reveal>
         <small>02</small>
-        <h3>كل شريك رئيس يُسلّم بنفسه</h3>
-        <p>لا توجد طبقة مبيعات ولا تسليم بين فرق. الشخص الذي تقابله هو الشخص المساءل عمّا يصل إلى مكتبك.</p>
+        <h3>كل شريك رئيس ينفّذ العمل بنفسه</h3>
+        <p>لا توجد وساطة من فريق مبيعات ولا إحالة للعمل إلى فريق آخر. الشخص الذي تقابله هو الشخص المساءل عمّا يصل إلى مكتبك.</p>
       </div>
       <div class="principle" data-reveal>
         <small>03</small>
@@ -170,7 +174,7 @@
 <section class="cta-band">
   <p class="eyebrow">ابدأ محادثة</p>
   <h2 data-reveal>اعمل مع أشخاص <span class="accent serif-i">أنجزوا العمل بأيديهم.</span></h2>
-  <p data-reveal>أخبرنا بما تبنيه أو تشغّله أو توثّقه، وسيرد عليك الشريك الرئيس المناسب شخصياً.</p>
+  <p data-reveal>أخبرنا بما تبنيه أو تشغّله أو توثّقه، وسيرد عليك الشريك الرئيس المناسب شخصياًً.</p>
   <div class="hero__actions" data-reveal>
     <a class="btn" href="../contact.html">تواصل معنا</a>
     <a class="btn btn--ghost" href="../index.html">العودة إلى المجموعة ←</a>
@@ -180,7 +184,7 @@
 <footer class="footer">
   <div class="footer__brand"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M6 40 V28 h7 v12 Z" fill="currentColor" opacity=".38"/><path d="M19.5 40 V19 h7 v21 Z" fill="currentColor" opacity=".64"/><path class="bar-t" d="M33 40 V8 h7 v32 Z" fill="#2bb3bd"/><circle cx="36.5" cy="4" r="2.2" fill="currentColor"/></svg>ASCENDERA<small>ننصح · نتحقق · نثبت · الرياض، السعودية</small></div>
   <nav>
-    <a href="../advisory/index.html">Advisory</a>
+    <a href="../advisory/index.html">الاستشارات والتنفيذ</a>
     <a href="../veriso/index.html">Veriso</a>
     <a href="../kalibra/index.html">Kalibra</a>
     <a href="../contact.html">تواصل</a>

@@ -1,4 +1,64 @@
 /* Ascendera shared behaviour */
+/* Open service groups reached from navigation, shared links or browser history. */
+(function () {
+  function revealServiceHash() {
+    var id;
+    try { id = decodeURIComponent(window.location.hash.slice(1)); } catch (_) { return; }
+    var target = id && document.getElementById(id);
+    if (!target) return;
+    var group = target.closest('.service-disclosure');
+    if (!group) return;
+    group.open = true;
+    requestAnimationFrame(function () { target.scrollIntoView({ block: 'start' }); });
+  }
+  window.addEventListener('hashchange', revealServiceHash);
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[href^="#"]');
+    if (link && link.hash === window.location.hash) revealServiceHash();
+  });
+  revealServiceHash();
+})();
+
+(function () {
+  'use strict';
+  var nav = document.querySelector('.nav');
+  var button = nav && nav.querySelector('.nav__toggle');
+  if (!button) return;
+  var ar = document.documentElement.lang === 'ar';
+  button.hidden = false;
+  nav.classList.add('nav--enhanced');
+  function setOpen(open) {
+    nav.classList.toggle('is-open', open);
+    button.setAttribute('aria-expanded', String(open));
+    button.textContent = ar ? (open ? 'إغلاق القائمة' : 'القائمة') : (open ? 'Close menu' : 'Menu');
+  }
+  button.addEventListener('click', function () { setOpen(button.getAttribute('aria-expanded') !== 'true'); });
+  nav.querySelectorAll('.nav__links a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && button.getAttribute('aria-expanded') === 'true') { setOpen(false); button.focus(); }
+  });
+  document.addEventListener('click', function (e) { if (!nav.contains(e.target)) setOpen(false); });
+  var mobile = window.matchMedia('(max-width:1000px)');
+  mobile.addEventListener('change', function () { setOpen(false); });
+})();
+
+/* Decorative motion can be paused independently of narrated watch pages. */
+(function () {
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  document.querySelectorAll('.hero__video').forEach(function (video) {
+    var ar = document.documentElement.lang === 'ar';
+    var button = document.createElement('button');
+    button.type = 'button'; button.className = 'motion-toggle';
+    function label() { button.textContent = ar ? (video.paused ? 'تشغيل الخلفية المتحركة' : 'إيقاف الخلفية المتحركة') : (video.paused ? 'Play background motion' : 'Pause background motion'); }
+    video.closest('.hero').appendChild(button);
+    button.addEventListener('click', function () { if (video.paused) video.play().catch(label); else video.pause(); });
+    video.addEventListener('play', label); video.addEventListener('pause', label);
+    if (reduced.matches) video.pause();
+    reduced.addEventListener('change', function (e) { if (e.matches) video.pause(); });
+    label();
+  });
+})();
+
 (function () {
   "use strict";
 
@@ -183,4 +243,27 @@
   done.hidden = false;
   if (form) form.style.display = "none";
   window.scrollTo(0, 0);
+})();
+
+/* Carry the selected practice service into the enquiry without overwriting user input. */
+(function () {
+  var select = document.getElementById('f-need');
+  if (!select) return;
+  var service = new URLSearchParams(window.location.search).get('service');
+  var option = Array.from(select.options).find(function (item) { return item.value === service; });
+  if (option && !select.value) select.value = option.value;
+  function updateService() {
+    var practiceService = /^hsse(?:-\d+)?$/.test(select.value) || ['hpo', 'critical-thinking', 'ultra-high-risk'].includes(select.value);
+    var detail = document.getElementById('service-detail');
+    if (detail) detail.value = practiceService ? select.options[select.selectedIndex].text : '';
+    var language = document.querySelector('.lang-toggle');
+    if (language) {
+      var target = new URL(language.href);
+      if (practiceService) target.searchParams.set('service', select.value);
+      else target.searchParams.delete('service');
+      language.href = target.href;
+    }
+  }
+  select.addEventListener('change', updateService);
+  updateService();
 })();
