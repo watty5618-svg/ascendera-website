@@ -1,0 +1,13 @@
+/* Simplified Chinese typography, using the existing Ascendera design system. */
+html[lang="zh-Hans"] body{font-family:Archivo,"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;line-height:1.8}
+html[lang="zh-Hans"] .h-display,html[lang="zh-Hans"] .h-serif{line-height:1.3;letter-spacing:-.025em;overflow-wrap:anywhere}
+html[lang="zh-Hans"] .h-display{max-width:16em;font-size:clamp(2.8rem,6vw,6rem)}
+html[lang="zh-Hans"] .h-display .zh-word{display:inline-block;white-space:nowrap}
+html[lang="zh-Hans"] .h-display em,html[lang="zh-Hans"] .h-serif em{font-family:Newsreader,"Songti SC",SimSun,serif;font-style:normal}
+html[lang="zh-Hans"] .eyebrow,html[lang="zh-Hans"] .btn,html[lang="zh-Hans"] .nav__links{letter-spacing:.04em}
+html[lang="zh-Hans"] p,html[lang="zh-Hans"] li{line-break:strict;overflow-wrap:break-word}
+html[lang="zh-Hans"] .hero__sub{max-width:40em}
+html[lang="zh-Hans"] .nav__brand,html[lang="zh-Hans"] .footer__brand{font-family:Archivo,sans-serif}
+html[lang="zh-Hans"] .hero__meta{line-height:1.8}
+html[lang="zh-Hans"] .film-transcript{line-height:1.9}
+@media(max-width:600px){html[lang="zh-Hans"] .h-display{font-size:clamp(2.4rem,11vw,4rem)}html[lang="zh-Hans"] .h-serif{font-size:clamp(2rem,8vw,3rem)}}

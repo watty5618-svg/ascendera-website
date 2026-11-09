@@ -2,11 +2,13 @@
 
 Static HTML site published from the repository root on GitHub Pages. The configured custom domain is `www.ascenderagroup.sa`.
 
-English pages are at the root and Arabic equivalents under `ar/`. Shared styles and behaviour live in `assets/css` and `assets/js`. Preserve reciprocal language links when adding or moving pages.
+English pages are at the root, Arabic equivalents under `ar/`, and Simplified Chinese equivalents under `zh/`. Shared styles and behaviour live in `assets/css` and `assets/js`. Preserve reciprocal language links and all four hreflang entries when adding or moving pages. Chinese pages use `lang="zh-Hans"`; their typography adjustments are in `assets/css/zh.css`.
 
 ## Veriso films
 
-The libraries are `veriso/videos/index.html` and `ar/veriso/videos/index.html`. Each film has a dedicated page under the corresponding `veriso/watch/` directory. The catalogue at `assets/video/catalogue.json` records each edition's paths, title, description and running time.
+The libraries are `veriso/videos/index.html`, `ar/veriso/videos/index.html` and `zh/veriso/videos/index.html`. Each film has a dedicated page under the corresponding `veriso/watch/` directory. The catalogue at `assets/video/catalogue.json` records each edition's paths, title, description and running time.
+
+The Chinese edition adds Mandarin AI narration, Simplified Chinese screen text, timed captions and matching full transcripts for all nine website films. The recordings use the licensed native Mandarin James Gao voice and Eleven v4. Their visual treatment is a Chinese presentation edition using existing brand marks and imagery; it does not replace the English and Arabic motion editions. Use each Chinese film's actual duration when updating cards and structured metadata. The separate Mandarin Group introduction is in the owner's film delivery collection, alongside the nine website films.
 
 The November 2026 editions include Veriso Platform, Process and Barrier, and Barrier Report. Each language has its own MP4, poster, WebVTT captions and transcript. Keep captions and transcript paired with the exact recording. Preserve `preload="none"`, native controls, and no autoplay on narrated films. The MP4 files already place their metadata first for streaming.
 

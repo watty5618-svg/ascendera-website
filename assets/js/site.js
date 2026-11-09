@@ -25,12 +25,13 @@
   var button = nav && nav.querySelector('.nav__toggle');
   if (!button) return;
   var ar = document.documentElement.lang === 'ar';
+  var zh = document.documentElement.lang === 'zh-Hans';
   button.hidden = false;
   nav.classList.add('nav--enhanced');
   function setOpen(open) {
     nav.classList.toggle('is-open', open);
     button.setAttribute('aria-expanded', String(open));
-    button.textContent = ar ? (open ? 'إغلاق القائمة' : 'القائمة') : (open ? 'Close menu' : 'Menu');
+    button.textContent = zh ? (open ? '关闭菜单' : '菜单') : ar ? (open ? 'إغلاق القائمة' : 'القائمة') : (open ? 'Close menu' : 'Menu');
   }
   button.addEventListener('click', function () { setOpen(button.getAttribute('aria-expanded') !== 'true'); });
   nav.querySelectorAll('.nav__links a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
@@ -47,9 +48,10 @@
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
   document.querySelectorAll('.hero__video').forEach(function (video) {
     var ar = document.documentElement.lang === 'ar';
+    var zh = document.documentElement.lang === 'zh-Hans';
     var button = document.createElement('button');
     button.type = 'button'; button.className = 'motion-toggle';
-    function label() { button.textContent = ar ? (video.paused ? 'تشغيل الخلفية المتحركة' : 'إيقاف الخلفية المتحركة') : (video.paused ? 'Play background motion' : 'Pause background motion'); }
+    function label() { button.textContent = zh ? (video.paused ? '播放背景动画' : '暂停背景动画') : ar ? (video.paused ? 'تشغيل الخلفية المتحركة' : 'إيقاف الخلفية المتحركة') : (video.paused ? 'Play background motion' : 'Pause background motion'); }
     video.closest('.hero').appendChild(button);
     button.addEventListener('click', function () { if (video.paused) video.play().catch(label); else video.pause(); });
     video.addEventListener('play', label); video.addEventListener('pause', label);
@@ -256,13 +258,12 @@
     var practiceService = /^hsse(?:-\d+)?$/.test(select.value) || ['hpo', 'critical-thinking', 'ultra-high-risk'].includes(select.value);
     var detail = document.getElementById('service-detail');
     if (detail) detail.value = practiceService ? select.options[select.selectedIndex].text : '';
-    var language = document.querySelector('.lang-toggle');
-    if (language) {
+    document.querySelectorAll('.lang-toggle').forEach(function (language) {
       var target = new URL(language.href);
       if (practiceService) target.searchParams.set('service', select.value);
       else target.searchParams.delete('service');
       language.href = target.href;
-    }
+    });
   }
   select.addEventListener('change', updateService);
   updateService();
