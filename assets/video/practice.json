@@ -24,6 +24,17 @@
         "poster": "assets/video/2026-11/hsse-practice-v2/ar.jpg",
         "vtt": "assets/video/2026-11/hsse-practice-v2/ar.vtt",
         "transcript": "assets/video/2026-11/hsse-practice-v2/ar.txt"
+      },
+      "zh": {
+        "title": "Ascendera｜健康、安全、安保与环境及关键风险",
+        "description": "了解我们如何建立、运行并验证HSSE职能，包括危险能量隔离、储存能量控制及更广泛的关键风险。",
+        "seconds": 279.52,
+        "language": "zh-Hans",
+        "uploadDate": "2026-11-09T11:30:17Z",
+        "movie": "assets/video/2026-11/hsse-practice-v2/zh.mp4",
+        "poster": "assets/video/2026-11/hsse-practice-v2/zh.jpg",
+        "vtt": "assets/video/2026-11/hsse-practice-v2/zh.vtt",
+        "transcript": "assets/video/2026-11/hsse-practice-v2/zh.txt"
       }
     }
   },
@@ -52,6 +63,17 @@
         "poster": "assets/video/2026-11/hpo-practice/ar.jpg",
         "vtt": "assets/video/2026-11/hpo-practice/ar.vtt",
         "transcript": "assets/video/2026-11/hpo-practice/ar.txt"
+      },
+      "zh": {
+        "title": "压力之下的高绩效",
+        "description": "认识 Dr Dan Cooper，了解我们如何通过真实情境、评估和向工作实践的转化，培养判断力、批判性思维和团队绩效。",
+        "seconds": 199.92,
+        "language": "zh-Hans",
+        "uploadDate": "2026-11-09T11:30:17Z",
+        "movie": "assets/video/2026-11/hpo-practice/zh.mp4",
+        "poster": "assets/video/2026-11/hpo-practice/zh.jpg",
+        "vtt": "assets/video/2026-11/hpo-practice/zh.vtt",
+        "transcript": "assets/video/2026-11/hpo-practice/zh.txt"
       }
     }
   },
@@ -80,6 +102,17 @@
         "poster": "assets/video/2026-11/ohtl-practice-v2/ar.jpg",
         "vtt": "assets/video/2026-11/ohtl-practice-v2/ar.vtt",
         "transcript": "assets/video/2026-11/ohtl-practice-v2/ar.txt"
+      },
+      "zh": {
+        "title": "架空输电线路专业能力",
+        "description": "认识 Lee Stevenson，了解实用的输电支持服务：施工方法、作业人员能力、工作文件，以及在沙特阿拉伯王国和海外新兴市场的项目交付。",
+        "seconds": 214.88,
+        "language": "zh-Hans",
+        "uploadDate": "2026-11-09T11:30:17Z",
+        "movie": "assets/video/2026-11/ohtl-practice-v2/zh.mp4",
+        "poster": "assets/video/2026-11/ohtl-practice-v2/zh.jpg",
+        "vtt": "assets/video/2026-11/ohtl-practice-v2/zh.vtt",
+        "transcript": "assets/video/2026-11/ohtl-practice-v2/zh.txt"
       }
     }
   }
